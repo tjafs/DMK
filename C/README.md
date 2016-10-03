@@ -1,0 +1,6 @@
+# DMK
+Datamaskinkonstruksjon
+
+les meg
+
+
