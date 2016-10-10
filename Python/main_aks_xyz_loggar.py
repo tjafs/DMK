@@ -18,6 +18,8 @@ import numpy as np
 import serial
 import matplotlib.pyplot as mpl
 
+
+
 # --------------------------------------------------------------------------
 # Metode for aa gi ut int-verdien til eit hexadesimalt teikn i ASCII-format
 # --------------------------------------------------------------------------
@@ -67,6 +69,24 @@ def seriekomm(serieport, kommando_koe, meldingar):  # Innhald i traaden
     print(serieport.name, 'er stengt')
 
 
+
+
+#metode for å lage en x-datastreng for seg selv, som kan kalles opp som en tråd.
+#
+def lag_x_data(ut_data, inn_data):
+    while(1):
+        if(len(inn_data)>20):
+            k = len(inn_data)
+            i = k - 5
+            if inn_data[i] == 'X':
+                #print('fant X data')
+                ut_data.append( 4096 * hexascii2int(inn_data[i + 1]) + 256 * hexascii2int(inn_data[i + 2]) + 16 * hexascii2int(inn_data[i + 3]) + hexascii2int(inn_data[i + 4]))
+            #else: print ('finner ikke X data verdier')
+
+        #else: print ('lengden til mcmeldingar er ikke over 5 enda')
+
+
+
 #-------------------------------------------------------------------------------------
 # Hovudtraad (main).
 # Denne opnar loggefil, kommandokoe, serieport og startar serietraaden.
@@ -86,7 +106,7 @@ def main():
     kommando = '0'
     fileName = 'logg.txt'
     f = open(fileName, 'r+')
-
+    x_data = []
     uC_meldingar = []
     brukarkommandoar = queue.Queue()
 
@@ -103,6 +123,11 @@ def main():
 
     serie_traad = threading.Thread(target=seriekomm, args=(serieport, brukarkommandoar, uC_meldingar))
     serie_traad.start()
+
+    lag_x_data_traad = threading.Thread(target=lag_x_data, args=(x_data, uC_meldingar))
+    lag_x_data_traad.start()
+
+
 
     print('Loggaren er klar')
 
@@ -155,6 +180,7 @@ def main():
             a_z_raa.append(
                 4096 * hexascii2int(uC_meldingar[i + 1]) + 256 * hexascii2int(uC_meldingar[i + 2]) + 16 * hexascii2int(
                     uC_meldingar[i + 3]) + hexascii2int(uC_meldingar[i + 4]))
+
 
 
  # Lag skalerte lister og rekna ut tilleggsvariablar.
@@ -219,19 +245,25 @@ def main():
         tid[k] = Ts * (tid[k] - skyv)
 
  # Skriv ut listene for kontroll
-    print(tid_raa)
-    print(tid)
-    print(len(tid))
+ #   print(tid_raa)
+ #   print(tid)
+ #   print(len(tid))
+    print('X RÅDATA:')
     print(a_x_raa)
     print(len(a_x_raa))
-    print(a_y_raa)
-    print(len(a_y_raa))
-    print(a_z_raa)
-    print(len(a_z_raa))
-    print(stamp)
-    print(len(a_x))
-    print(rull)
-    print(len(a_x))
+ #   print(a_y_raa)
+ #   print(len(a_y_raa))
+ #   print(a_z_raa)
+ #   print(len(a_z_raa))
+ #   print(stamp)
+ #   print(len(a_x))
+ #   print(rull)
+ #   print(len(a_x))
+    print('X DATA:')
+    print(x_data)
+    print(len(x_data))
+
+
 
  # Seks subplott med felles tidsakse.
     f, aks_sub = mpl.subplots(6, sharex=True)
