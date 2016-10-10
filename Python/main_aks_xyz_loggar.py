@@ -75,15 +75,16 @@ def seriekomm(serieport, kommando_koe, meldingar):  # Innhald i traaden
 #
 def lag_x_data(ut_data, inn_data):
     while(1):
-        if(len(inn_data)>20):
+        time.sleep(0.1)
+        if(len(inn_data)>5):
             k = len(inn_data)
             i = k - 5
             if inn_data[i] == 'X':
                 #print('fant X data')
                 ut_data.append( 4096 * hexascii2int(inn_data[i + 1]) + 256 * hexascii2int(inn_data[i + 2]) + 16 * hexascii2int(inn_data[i + 3]) + hexascii2int(inn_data[i + 4]))
-            #else: print ('finner ikke X data verdier')
+            else: print ('finner ikke X data verdier')
 
-        #else: print ('lengden til mcmeldingar er ikke over 5 enda')
+        else: print ('lengden til mcmeldingar er ikke over 5 enda')
 
 
 
@@ -111,7 +112,7 @@ def main():
     brukarkommandoar = queue.Queue()
 
     connected = True
-    port = 'COM4'
+    port = 'COM3'
     baud = 115200  # 9600
 
     serieport = serial.Serial(port, baud, timeout=1)
@@ -146,6 +147,7 @@ def main():
     time.sleep(1)  # Sikra at traaden faar med seg slutten paa meldinga
     serieport.write('s'.encode('utf-8'))  # Gi melding til uC-en om aa stoppa sending av nye data #KT La til encoding
     print('Stoppar logging')
+    lag_x_data_traad.stop()
 
     # serieport.close()     # Det er naa kome kommando om aa stoppa logginga
     # print '%s %s'  %(serieport.name, 'er stengt')
@@ -290,6 +292,8 @@ def main():
     aks_sub[5].grid()
 
     mpl.show()
+
+
 
     print('Slutt i main')
 
