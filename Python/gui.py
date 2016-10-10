@@ -33,10 +33,6 @@ frameno=0
 rtg_traad = threading.Thread(target=rtg(frameno), args=(0))
 rtg_traad.start()
 
-#Serieporttråd som bruker flagg til å gå mellom start og stopp logging
-
-
-
 #lager vinduet
 root = Tk()
 
