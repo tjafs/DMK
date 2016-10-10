@@ -17,8 +17,8 @@ import time
 import numpy as np
 import serial
 import matplotlib.pyplot as mpl
-import os
 from metoder import *
+
 
 #-------------------------------------------------------------------------------------
 # Hovudtraad (main).
@@ -36,6 +36,7 @@ from metoder import *
 # og rullvinkel. Alt dette blir saa plotta til slutt.
 #-------------------------------------------------------------------------------------
 def main():
+    stopp = 0
     kommando = '0'
     fileName = 'logg.txt'
     f = open(fileName, 'r+')
@@ -57,9 +58,7 @@ def main():
     serie_traad = threading.Thread(target=seriekomm, args=(serieport, brukarkommandoar, uC_meldingar))
     serie_traad.start()
 
-
-
-    lag_x_data_traad = threading.Thread(target=lag_x_data, args=(x_data, uC_meldingar))
+    lag_x_data_traad = threading.Thread(target=lag_x_data, args=(x_data, uC_meldingar, stopp))
     lag_x_data_traad.start()
     print('Loggaren er klar')
 
@@ -78,6 +77,8 @@ def main():
     time.sleep(1)  # Sikra at traaden faar med seg slutten paa meldinga
     serieport.write('s'.encode('utf-8'))  # Gi melding til uC-en om aa stoppa sending av nye data #KT La til encoding
     print('Stoppar logging')
+    stopp=1
+    print(stopp)
 
 
     # serieport.close()     # Det er naa kome kommando om aa stoppa logginga

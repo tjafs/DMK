@@ -7,8 +7,8 @@ import matplotlib.pyplot as mpl
 
 #metode for å lage en x-datastreng for seg selv, som kan kalles opp som en tråd.
 #
-def lag_x_data(ut_data, inn_data):
-    while(1):
+def lag_x_data(ut_data, inn_data, status):
+    while(status==0):
         #time.sleep(0.1)
         i = len(inn_data)
         #print('Antall elementer avlest: ')
@@ -16,18 +16,8 @@ def lag_x_data(ut_data, inn_data):
 
         if(i>50):
             if inn_data[i-1] == 'Y':
-                print('fant X data')
-                #print(inn_data[i])
-                print(inn_data[i-1])
-                print(inn_data[i-2])
-                print(inn_data[i-3])
-                print(inn_data[i-4])
-                print(inn_data[i - 5])
-                print(inn_data[i - 6])
                 #original fra x raa data: ut_data.append( 4096 * hexascii2int(inn_data[i + 1]) + 256 * hexascii2int(inn_data[i + 2]) + 16 * hexascii2int(inn_data[i + 3]) + hexascii2int(inn_data[i + 4]))
                 ut_data.append( 4096 * hexascii2int(inn_data[i - 5]) + 256 * hexascii2int(inn_data[i - 4]) + 16 * hexascii2int(inn_data[i - 3]) + hexascii2int(inn_data[i - 2]))
-                print(ut_data)
-                exit()
            # else: print ('finner ikke X data verdier')
 
         #else: print ('lengden til mcmeldingar er ikke over 5 enda')
