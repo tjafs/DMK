@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import threading
 import Logging
-import Metoder
+import metoder
 from tkinter import *
 from tkinter import ttk
 import tkinter
@@ -22,7 +22,7 @@ knapp_nummer = 1
 # opptatering av graf 1-------------------------------
 def animate(i):
     if kor == 1:
-        (x,y) = Metoder.input(1)
+        (x,y) = metoder.input(1)
         a.clear()
         a.plot(x, y)
 
@@ -30,7 +30,7 @@ def animate(i):
 # opptatering av graf 1-------------------------------
 def animate2(i):
 
-    (x,y) = Metoder.input(5)
+    (x,y) = metoder.input(5)
     a2.clear()
     a2.plot(x, y)
 # ------------------------------------------------------------------
@@ -40,7 +40,7 @@ def animate2(i):
 def start_knapp():
     global kor
     if kor == 0:
-        Metoder.output(2,0,0)
+        metoder.output(2,0,0)
 
         #yo = threading.Thread(target=Logging.start_lesing)
         #yo.start()
@@ -54,9 +54,9 @@ def stop_knapp():
     kor = 0
     global knapp_nummer
     global yo
-    Metoder.output(2,1,1)
+    metoder.output(2,1,1)
 
-    lagring_fil = threading.Thread(target=Metoder.lagring_data)
+    lagring_fil = threading.Thread(target=metoder.lagring_data)
     lagring_fil.start()
 
     add_Button(knapp_nummer)
@@ -104,8 +104,8 @@ mainframe3.columnconfigure(0, weight=1)
 mainframe3.rowconfigure(0, weight=1)
 
 def tidligere_logg(tall):
-    (x,y) = Metoder.input(tall)
-    Metoder.output(5,x,y)
+    (x,y) = metoder.input(tall)
+    metoder.output(5,x,y)
     print('yo')
 
 ttk.Button(mainframe3, text='Start').grid(column=1, row=1)
