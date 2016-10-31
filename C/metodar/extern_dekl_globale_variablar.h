@@ -86,16 +86,7 @@ extern uint8_t legg_til_meldingshale;
 
 extern uint8_t send_ei_brytarmelding_via_uart;
 extern uint8_t  mottatt_data;
-// Definisjonar og variablar for utskrift til LCD-skjerm
-//-----------------------------------------------
-#define LCD_Enable 0x8 //E=1
-#define LCD_Disable 0x0 //E=0
-#define LCD_Read 0x4 // R/*W=1
-#define LCD_Write 0x0 // R/*W=0,
-#define LCD_RS_data 0x2 // RS=1
-#define LCD_RS_kommando 0x0 // RS=0
 
-extern uint8_t skriv_til_LCD;
 
 
 
