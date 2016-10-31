@@ -113,7 +113,7 @@ void PWM_sett_vidde_TIM2_CH2(uint32_t vidde)  {
 // Frå Ørland 14
 
 //NVIC_InitTypeDef NVIC_InitStructure;
-//
+
 //NVIC_InitStructure.NVIC_IRQChannel = TIM2_IRQn;
 //NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 0;
 //NVIC_InitStructure.NVIC_IRQChannelSubPriority = 1;

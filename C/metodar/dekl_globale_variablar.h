@@ -46,7 +46,7 @@ uint8_t hex2ascii_tabell[16] = {'0','1','2','3','4','5','6','7','8','9','A','B',
 uint16_t PWM_periode = 99; //Gir periodetid på 100 teljingar
                            //dvs.100/72MHz = 1.39usek
                            // Forklaring i TIM_oppstart()
-uint16_t PWM_vidde = 25; // Startverdi for på-tida til pulsbreiddesignalet,
+uint16_t PWM_vidde = 50; // Startverdi for på-tida til pulsbreiddesignalet,
                         //dvs. 25 teljingar som gir 25% PÅ-tid
 uint16_t PWM_preskalering = 0;
 
@@ -89,14 +89,5 @@ uint8_t legg_til_meldingshale = 0;
 volatile uint8_t tikkteljar_uartkomm = 0;
 uint8_t send_ei_brytarmelding_via_uart = 0;
 uint8_t  mottatt_data;
-// Definisjonar og variablar for utskrift til LCD-skjerm
-//-----------------------------------------------
-#define LCD_Enable 0x8 //E=1
-#define LCD_Disable 0x0 //E=0
-#define LCD_Read 0x4 // R/*W=1
-#define LCD_Write 0x0 // R/*W=0,
-#define LCD_RS_data 0x2 // RS=1
-#define LCD_RS_kommando 0x0 // RS=0
 
-uint8_t skriv_til_LCD = 1;
 
