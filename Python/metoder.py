@@ -7,9 +7,13 @@ class Company(object):
         self.x_data = x_data
         self.y_data = y_data
 
+class data(object):
+    def __init__(self,x_data,y_data):
+        self.x_data = x_data
+        self.y_data = y_data
+
 global num
 num = 0
-
 
 def lagring_data():
     global num
@@ -26,6 +30,21 @@ def lagring_data():
         pickle.dump(company2, output, pickle.HIGHEST_PROTOCOL)
     del company2
     return
+
+def henting_av_tidligeredata(num):
+
+    l1 = ['logg_', str(num), '.pkl']
+    s = ''.join(l1)
+
+    try:
+        with open(str(s), 'rb') as input:
+            data = pickle.load(input)
+            x = data.x_data
+            y = data.y_data
+    except EOFError:
+        return 'jalla'
+    return (x,y)
+
 
 def input(nummer):
 
