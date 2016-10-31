@@ -1,101 +1,101 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wall -ffunction-sections -g -O2 -c -DSTM32F303VC -DSTM32F30X -D__FPU_USED -IF:\Dokum\Fagverksemd\Prosjekt\ARM\Prosjekt\Dmkon\aks_xyz_loggar_stm32f3disc\stm32f3_discovery -IF:\Dokum\Fagverksemd\Prosjekt\ARM\Prosjekt\Dmkon\aks_xyz_loggar_stm32f3disc\cmsis_lib -IF:\Dokum\Fagverksemd\Prosjekt\ARM\Prosjekt\Dmkon -IF:\Dokum\Fagverksemd\Prosjekt\ARM\Prosjekt\Dmkon\aks_xyz_loggar_stm32f3disc\cmsis_lib\include -IF:\Dokum\Fagverksemd\Prosjekt\ARM\Prosjekt\Dmkon\aks_xyz_loggar_stm32f3disc\metodar -IF:\Dokum\Fagverksemd\Prosjekt\ARM\Prosjekt\Dmkon\aks_xyz_loggar_stm32f3disc\cmsis -IF:\Dokum\Fagverksemd\Prosjekt\ARM\Prosjekt\Dmkon\aks_xyz_loggar_stm32f3disc\cmsis_boot -IF:\Dokum\Fagverksemd\Prosjekt\ARM\Prosjekt\Dmkon\aks_xyz_loggar_stm32f3disc -IF:\Dokum\Fagverksemd\Prosjekt\ARM\Prosjekt\Dmkon\aks_xyz_loggar_stm32f3disc\example">
-      <target file="stm32f30x_spi.o" lastModified="14e8bd25bd1">
-         <source file="..\..\..\cmsis_lib\source\stm32f30x_spi.c" lastModified="14757adba45"/>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wall -ffunction-sections -g -O2 -c -DSTM32F303VC -DSTM32F30X -D__FPU_USED -I..\..\..\..\..\DMK\DMK\C\cmsis -I..\..\..\..\..\DMK\DMK\C -I..\..\..\..\..\DMK\DMK\C\stm32f3_discovery -I..\..\..\..\..\DMK\DMK -I..\..\..\..\..\DMK\DMK\C\cmsis_lib\include -I..\..\..\..\..\DMK\DMK\C\cmsis_lib -I..\..\..\..\..\DMK\DMK\C\example -I..\..\..\..\..\DMK\DMK\C\cmsis_boot -I..\..\..\..\..\DMK\DMK\C\metodar">
+      <target file="stm32f30x_spi.o" lastModified="1581afa5f28">
+         <source file="..\..\..\cmsis_lib\source\stm32f30x_spi.c" lastModified="1581ae51b1b"/>
       </target>
-      <target file="TIM_metodar.o" lastModified="14e95d374a1">
-         <source file="..\..\..\metodar\TIM_metodar.c" lastModified="14e8c08974a"/>
+      <target file="TIM_metodar.o" lastModified="1581afa5776">
+         <source file="..\..\..\metodar\TIM_metodar.c" lastModified="1581ae51b2f"/>
       </target>
-      <target file="system_stm32f30x_temp.o" lastModified="14e8bd25d09">
-         <source file="..\..\..\cmsis_boot\system_stm32f30x_temp.c" lastModified="14757acd73a"/>
+      <target file="system_stm32f30x_temp.o" lastModified="1581afa611c">
+         <source file="..\..\..\cmsis_boot\system_stm32f30x_temp.c" lastModified="1581ae51afd"/>
       </target>
-      <target file="initialisering.o" lastModified="14e8c0011c6">
-         <source file="..\..\..\metodar\initialisering.c" lastModified="14e8c000d52"/>
+      <target file="initialisering.o" lastModified="1581afa605e">
+         <source file="..\..\..\metodar\initialisering.c" lastModified="1581ae51b2f"/>
       </target>
-      <target file="LINMOT_metodar.o" lastModified="14e95d377dd">
-         <source file="..\..\..\metodar\LINMOT_metodar.c" lastModified="14e8bfc3151"/>
+      <target file="LINMOT_metodar.o" lastModified="1581afa65ba">
+         <source file="..\..\..\metodar\LINMOT_metodar.c" lastModified="1581ae51b25"/>
       </target>
-      <target file="UART_metodar.o" lastModified="14e95d3752e">
-         <source file="..\..\..\metodar\UART_metodar.c" lastModified="14e90cf8dd7"/>
+      <target file="UART_metodar.o" lastModified="1581afa58fb">
+         <source file="..\..\..\metodar\UART_metodar.c" lastModified="1581ae51b2f"/>
       </target>
-      <target file="stm32f30x_rcc.o" lastModified="14e8bd2551a">
-         <source file="..\..\..\cmsis_lib\source\stm32f30x_rcc.c" lastModified="14757ad44c3"/>
+      <target file="stm32f30x_rcc.o" lastModified="1581afa564a">
+         <source file="..\..\..\cmsis_lib\source\stm32f30x_rcc.c" lastModified="1581ae51b1b"/>
       </target>
-      <target file="stm32f30x_it.o" lastModified="14e8bd2578b">
-         <source file="..\..\..\example\stm32f30x_it.c" lastModified="14758199fb1"/>
+      <target file="stm32f30x_it.o" lastModified="1581afa5962">
+         <source file="..\..\..\example\stm32f30x_it.c" lastModified="1581ae51b25"/>
       </target>
-      <target file="avbrots_metodar.o" lastModified="14f9766f5a1">
-         <source file="..\..\..\metodar\avbrots_metodar.c" lastModified="14f9766eecb"/>
+      <target file="avbrots_metodar.o" lastModified="1581afd51e2">
+         <source file="..\..\..\metodar\avbrots_metodar.c" lastModified="1581afd4f35"/>
       </target>
-      <target file="printf.o" lastModified="14e8bd2599e">
-         <source file="..\..\..\stdio\printf.c" lastModified="14757ad1e02"/>
+      <target file="printf.o" lastModified="1581afa5ca4">
+         <source file="..\..\..\stdio\printf.c" lastModified="1581ae51b2f"/>
       </target>
-      <target file="stm32f30x_i2c.o" lastModified="14e8bd25c6d">
-         <source file="..\..\..\cmsis_lib\source\stm32f30x_i2c.c" lastModified="14757ae183d"/>
+      <target file="stm32f30x_i2c.o" lastModified="1581afa600e">
+         <source file="..\..\..\cmsis_lib\source\stm32f30x_i2c.c" lastModified="1581ae51b1b"/>
       </target>
-      <target file="GPIO_metodar.o" lastModified="14e95d37731">
-         <source file="..\..\..\metodar\GPIO_metodar.c" lastModified="14e254301ae"/>
+      <target file="GPIO_metodar.o" lastModified="1581afa5df0">
+         <source file="..\..\..\metodar\GPIO_metodar.c" lastModified="1581ae51b25"/>
       </target>
-      <target file="stm32f30x_usart.o" lastModified="14e8bd262a7">
-         <source file="..\..\..\cmsis_lib\source\stm32f30x_usart.c" lastModified="14757adcc8a"/>
+      <target file="stm32f30x_usart.o" lastModified="1581afa681c">
+         <source file="..\..\..\cmsis_lib\source\stm32f30x_usart.c" lastModified="1581ae51b25"/>
       </target>
-      <target file="stm32f3_discovery_lsm303dlhc.o" lastModified="14e8c85832c">
-         <source file="..\..\..\stm32f3_discovery\stm32f3_discovery_lsm303dlhc.c" lastModified="14e8c788112"/>
+      <target file="stm32f3_discovery_lsm303dlhc.o" lastModified="1581afa5712">
+         <source file="..\..\..\stm32f3_discovery\stm32f3_discovery_lsm303dlhc.c" lastModified="1581ae51b39"/>
       </target>
-      <target file="I2C_metodar.o" lastModified="14e8bd256b0">
-         <source file="..\..\..\metodar\I2C_metodar.c" lastModified="14a0bb729fe"/>
+      <target file="I2C_metodar.o" lastModified="1581afa582a">
+         <source file="..\..\..\metodar\I2C_metodar.c" lastModified="1581ae51b25"/>
       </target>
-      <target file="LCD_metodar.o" lastModified="14e95d80a8d">
-         <source file="..\..\..\metodar\LCD_metodar.c" lastModified="14e95d80230"/>
+      <target file="LCD_metodar.o" lastModified="1581afaf8a5">
+         <source file="..\..\..\metodar\LCD_metodar.c" lastModified="1581afaf5c3"/>
       </target>
-      <target file="stm32f30x_gpio.o" lastModified="14e8bd257f8">
-         <source file="..\..\..\cmsis_lib\source\stm32f30x_gpio.c" lastModified="14757ad4d1b"/>
+      <target file="stm32f30x_exti.o" lastModified="1581afa5e68">
+         <source file="..\..\..\cmsis_lib\source\stm32f30x_exti.c" lastModified="1581ae51b1b"/>
       </target>
-      <target file="stm32f30x_exti.o" lastModified="14e8bd25b34">
-         <source file="..\..\..\cmsis_lib\source\stm32f30x_exti.c" lastModified="14e8bbac0c4"/>
+      <target file="stm32f30x_gpio.o" lastModified="1581afa59ee">
+         <source file="..\..\..\cmsis_lib\source\stm32f30x_gpio.c" lastModified="1581ae51b1b"/>
       </target>
-      <target file="SPI2_metodar.o" lastModified="14e95d3778f">
-         <source file="..\..\..\metodar\SPI2_metodar.c" lastModified="148f0e6bd7a"/>
+      <target file="SPI2_metodar.o" lastModified="1581afa655e">
+         <source file="..\..\..\metodar\SPI2_metodar.c" lastModified="1581ae51b2f"/>
       </target>
-      <target file="stm32f3_discovery.o" lastModified="14e8bd261fb">
-         <source file="..\..\..\stm32f3_discovery\stm32f3_discovery.c" lastModified="14909430eb0"/>
+      <target file="stm32f3_discovery.o" lastModified="1581afa6736">
+         <source file="..\..\..\stm32f3_discovery\stm32f3_discovery.c" lastModified="1581ae51b2f"/>
       </target>
-      <target file="stm32f3_discovery_l3gd20.o" lastModified="14e8bd25f8a">
-         <source file="..\..\..\stm32f3_discovery\stm32f3_discovery_l3gd20.c" lastModified="14909430eb0"/>
+      <target file="stm32f3_discovery_l3gd20.o" lastModified="1581afa643c">
+         <source file="..\..\..\stm32f3_discovery\stm32f3_discovery_l3gd20.c" lastModified="1581ae51b2f"/>
       </target>
-      <target file="stm32f30x_can.o" lastModified="14e8bd2618d">
-         <source file="..\..\..\cmsis_lib\source\stm32f30x_can.c" lastModified="14757ad6598"/>
+      <target file="stm32f30x_can.o" lastModified="1581afa66be">
+         <source file="..\..\..\cmsis_lib\source\stm32f30x_can.c" lastModified="1581ae51b1b"/>
       </target>
-      <target file="syscalls.o" lastModified="14e8bd25d76">
-         <source file="..\..\..\syscalls\syscalls.c" lastModified="14757ad1e22"/>
+      <target file="syscalls.o" lastModified="1581afa6176">
+         <source file="..\..\..\syscalls\syscalls.c" lastModified="1581ae51b39"/>
       </target>
-      <target file="stm32f30x_tim.o" lastModified="14e8bd25f0d">
-         <source file="..\..\..\cmsis_lib\source\stm32f30x_tim.c" lastModified="14757adc368"/>
+      <target file="stm32f30x_tim.o" lastModified="1581afa639c">
+         <source file="..\..\..\cmsis_lib\source\stm32f30x_tim.c" lastModified="1581ae51b1b"/>
       </target>
-      <target file="stm32f30x_misc.o" lastModified="14e8bd25dc5">
-         <source file="..\..\..\cmsis_lib\source\stm32f30x_misc.c" lastModified="14e8bd1e48d"/>
+      <target file="stm32f30x_misc.o" lastModified="1581afa61da">
+         <source file="..\..\..\cmsis_lib\source\stm32f30x_misc.c" lastModified="1581ae51b1b"/>
       </target>
-      <target file="LSM303DLHC_metodar.o" lastModified="14f9766f5ff">
-         <source file="..\..\..\metodar\LSM303DLHC_metodar.c" lastModified="14e95edec8f"/>
+      <target file="LSM303DLHC_metodar.o" lastModified="1581afa60ae">
+         <source file="..\..\..\metodar\LSM303DLHC_metodar.c" lastModified="1581ae51b25"/>
       </target>
-      <target file="SPI1_metodar.o" lastModified="14e95d54359">
-         <source file="..\..\..\metodar\SPI1_metodar.c" lastModified="14e95d5402d"/>
+      <target file="SPI1_metodar.o" lastModified="1581afa5d80">
+         <source file="..\..\..\metodar\SPI1_metodar.c" lastModified="1581ae51b2f"/>
       </target>
-      <target file="stm32f30x_syscfg.o" lastModified="14e8bd26016">
-         <source file="..\..\..\cmsis_lib\source\stm32f30x_syscfg.c" lastModified="149094306e0"/>
+      <target file="stm32f30x_syscfg.o" lastModified="1581afa64e6">
+         <source file="..\..\..\cmsis_lib\source\stm32f30x_syscfg.c" lastModified="1581ae51b1b"/>
       </target>
-      <target file="startup_stm32f30x.o" lastModified="14e8bd25fb9">
-         <source file="..\..\..\cmsis_boot\startup\startup_stm32f30x.S" lastModified="14757acd6fc"/>
+      <target file="startup_stm32f30x.o" lastModified="1581afa6478">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f30x.S" lastModified="1581ae51af3"/>
       </target>
-      <target file="GPIO_Toggle_Example.o" lastModified="14e8bd2546e">
-         <source file="..\..\..\example\GPIO_Toggle_Example.c" lastModified="14757b03609"/>
+      <target file="GPIO_Toggle_Example.o" lastModified="1581afa546a">
+         <source file="..\..\..\example\GPIO_Toggle_Example.c" lastModified="1581ae51b25"/>
       </target>
-      <target file="system_stm32f30x.o" lastModified="14e8bd25681">
-         <source file="..\..\..\example\system_stm32f30x.c" lastModified="14757b035f9"/>
+      <target file="system_stm32f30x.o" lastModified="1581afa57ee">
+         <source file="..\..\..\example\system_stm32f30x.c" lastModified="1581ae51b25"/>
       </target>
-      <target file="main.o" lastModified="14f9766f515">
-         <source file="..\..\..\main.c" lastModified="14f8d6cd497"/>
+      <target file="main.o" lastModified="1581afa5bbc">
+         <source file="..\..\..\main.c" lastModified="1581af95d3e"/>
       </target>
    </processor>
 </history>

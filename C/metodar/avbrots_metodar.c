@@ -86,12 +86,6 @@ void SysTick_Handler(void) {
 
 	}
 
-	tikkteljar_diodar++;
-	if(tikkteljar_diodar >= 200) { //Har det gått 200 x 1 millisek sidan siste
-			                              // oppdatering av diodebitane), så gi melding til
-		oppdater_diodar = 1;          //tilstandsmaskinsmetoden.
-		tikkteljar_diodar = 0;
-	}
 
 	GPIOC->ODR = GPIOC->ODR ^ GPIO_Pin_6; // Blinkesignal ut paa testpinne (PC6).
 
@@ -100,11 +94,14 @@ void SysTick_Handler(void) {
 	kommando = USART2_les();
 	if( kommando == 'k')  {  //Køyr i gong sending av målingane til loggaren
 		send_maalingar_til_loggar = 1;
+		GPIOE->ODR = GPIOE->ODR ^ GPIO_Pin_9;
 		legg_til_meldingshovud = 1; //Aller først skal hovudprogrammet leggja til STX
+
 
 	}
 	if( kommando == 's')  {  //Stopp sending av målingane til loggaren
 		send_maalingar_til_loggar = 0;
+		GPIOE->ODR = GPIOE->ODR ^ GPIO_Pin_9;
 		legg_til_meldingshale = 1;
 
 	}
