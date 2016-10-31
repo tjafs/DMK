@@ -17,7 +17,54 @@ import time
 import numpy as np
 import serial
 import matplotlib.pyplot as mpl
-from metoder import *
+
+# --------------------------------------------------------------------------
+# Metode for aa gi ut int-verdien til eit hexadesimalt teikn i ASCII-format
+# --------------------------------------------------------------------------
+def hexascii2int(hex_teikn):
+    if '0' <= hex_teikn <= '9':
+        return (int(ord(hex_teikn) - 48))  # ASCII-koden for '0' er 0x30 = 48
+    elif 'A' <= hex_teikn <= 'F':
+        return (int(ord(hex_teikn) - 55))  # ASCII-koden for 'A' er 0x41 = 65
+
+#-------------------------------------------------------------------------
+# Kode for ein traad som les serieporten konfigurert i hovudtraaden main.
+# Lesinga startar naar traaden faar ein 'k'(koeyr) via ein kommandokoe og
+# stansar naar traaden faar ein 's' og etterpaa les meldingshalen ETX.
+# Alle mottatte teikn blir lagt inn i ei meldingsliste.
+# Serieporten blir stengt til slutt.
+#-------------------------------------------------------------------------
+def seriekomm(serieport, kommando_koe, meldingar):  # Innhald i traaden
+    try:
+        ny_kommando = kommando_koe.get()  # Vil henga til han faar foerste kommandoen
+    except Exception:
+        pass  # Ignorer, men kvitter ut evt. unntak som oppstaar.
+
+    tilstand = ny_kommando
+
+    while tilstand == 'k':  # Saa lenge ein vil k(oeyra logging)
+
+        #		while serieport.inWaiting() > 0:
+        teikn = str(serieport.read(1), encoding='utf-8')  # Les eitt teikn.  #KT La til convert til str
+                                                          # Vil blokkera/henga til det er kome noko aa lesa
+        meldingar.append(teikn)
+
+        try:
+            ny_kommando = kommando_koe.get(block=False)  # Her skal ein ikkje henga/blokkera
+        except Exception:  # men bare sjekka om det er kome ny kommando
+            pass  # Her faar ein eit"Empty"-unntak kvar gong ein les ein tom koe. Dette skal
+        # ignorerast, men kvitterast ut.
+
+        if ny_kommando == 's':
+            tilstand = ny_kommando  # Stans logging men fullfoer lesing t.o.m meldingshalen ETX
+
+    while teikn != '\x03':  # Heilt til og med meldingshalen ETX
+        #		while serieport.inWaiting() > 0:
+        teikn = str(serieport.read(1), encoding='utf-8')  # Les eitt teikn. #KT La til convert til str
+        meldingar.append(teikn)
+
+    serieport.close()  # Steng ned
+    print(serieport.name, 'er stengt')
 
 
 #-------------------------------------------------------------------------------------
@@ -36,16 +83,15 @@ from metoder import *
 # og rullvinkel. Alt dette blir saa plotta til slutt.
 #-------------------------------------------------------------------------------------
 def main():
-    stopp = 0
     kommando = '0'
     fileName = 'logg.txt'
     f = open(fileName, 'r+')
-    x_data = []
+
     uC_meldingar = []
     brukarkommandoar = queue.Queue()
 
     connected = True
-    port = 'COM3'
+    port = 'COM5'
     baud = 115200  # 9600
 
     serieport = serial.Serial(port, baud, timeout=1)
@@ -58,8 +104,6 @@ def main():
     serie_traad = threading.Thread(target=seriekomm, args=(serieport, brukarkommandoar, uC_meldingar))
     serie_traad.start()
 
-    lag_x_data_traad = threading.Thread(target=lag_x_data, args=(x_data, uC_meldingar, stopp))
-    lag_x_data_traad.start()
     print('Loggaren er klar')
 
     while kommando != 'k':
@@ -77,9 +121,6 @@ def main():
     time.sleep(1)  # Sikra at traaden faar med seg slutten paa meldinga
     serieport.write('s'.encode('utf-8'))  # Gi melding til uC-en om aa stoppa sending av nye data #KT La til encoding
     print('Stoppar logging')
-    stopp=1
-    print(stopp)
-
 
     # serieport.close()     # Det er naa kome kommando om aa stoppa logginga
     # print '%s %s'  %(serieport.name, 'er stengt')
@@ -114,7 +155,6 @@ def main():
             a_z_raa.append(
                 4096 * hexascii2int(uC_meldingar[i + 1]) + 256 * hexascii2int(uC_meldingar[i + 2]) + 16 * hexascii2int(
                     uC_meldingar[i + 3]) + hexascii2int(uC_meldingar[i + 4]))
-
 
 
  # Lag skalerte lister og rekna ut tilleggsvariablar.
@@ -179,25 +219,19 @@ def main():
         tid[k] = Ts * (tid[k] - skyv)
 
  # Skriv ut listene for kontroll
- #   print(tid_raa)
- #   print(tid)
- #   print(len(tid))
-    print('X RÅDATA:')
+    print(tid_raa)
+    print(tid)
+    print(len(tid))
     print(a_x_raa)
     print(len(a_x_raa))
- #   print(a_y_raa)
- #   print(len(a_y_raa))
- #   print(a_z_raa)
- #   print(len(a_z_raa))
- #   print(stamp)
- #   print(len(a_x))
- #   print(rull)
- #   print(len(a_x))
-    print('X DATA:')
-    print(x_data)
-    print(len(x_data))
-
-
+    print(a_y_raa)
+    print(len(a_y_raa))
+    print(a_z_raa)
+    print(len(a_z_raa))
+    print(stamp)
+    print(len(a_x))
+    print(rull)
+    print(len(a_x))
 
  # Seks subplott med felles tidsakse.
     f, aks_sub = mpl.subplots(6, sharex=True)
@@ -224,8 +258,6 @@ def main():
     aks_sub[5].grid()
 
     mpl.show()
-
-
 
     print('Slutt i main')
 
