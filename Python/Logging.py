@@ -70,7 +70,7 @@ def start_lesing():
         p1 = P(0, 0, 0, 0, 0, 0)
         l = 1
 
-        metoder.output(1,0,0)
+        metoder.lagring_av_kontinuerlig_data(1,0,0)
 
 
         while (l <= 10):
@@ -91,10 +91,10 @@ def start_lesing():
             tid.append(p1.gettid_data())
             x_data.append(p1.getx_data())
 
-            metoder.output(1,tid,x_data)
+            metoder.lagring_av_kontinuerlig_data(1,tid,x_data)
 
 
-            (stop,stop2) = metoder.input(2)
+            (stop,stop2) = metoder.henting_av_kontinuerlig_data(2)
 
 
             if stop == 1:
@@ -167,6 +167,7 @@ def start_lesing():
 
         return p1
 
+#----------------------------------------------------------------------------------
     # Installering av variabler
     kommando = '0'
     brukarkommandoar = queue.Queue()

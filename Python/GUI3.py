@@ -24,7 +24,7 @@ start = 0
 # opptatering av graf 1-------------------------------
 def animate(i):
     if kor == 1:
-        (x,y) = metoder.input(1)
+        (x,y) = metoder.henting_av_kontinuerlig_data(1)
         a.clear()
         a.plot(x, y)
 
@@ -34,7 +34,7 @@ def animate2(i):
     global start
     global graf2
     if start == 1 and graf2 != 0:
-        (x, y) = metoder.henting_av_tidligeredata(graf2)
+        (x, y) = metoder.henting_av_tidligere_data(graf2)
         a2.clear()
         a2.plot(x, y)
 
@@ -46,7 +46,7 @@ def start_knapp():
     global start
     start = 1
     if kor == 0:
-        metoder.output(2,0,0)
+        metoder.lagring_av_kontinuerlig_data(2,0,0)
 
         yo = threading.Thread(target=Logging.start_lesing)
         yo.start()
@@ -62,9 +62,9 @@ def stop_knapp():
         global kor
         kor = 0
         global knapp_nummer
-        metoder.output(2, 1, 1)
+        metoder.lagring_av_kontinuerlig_data(2, 1, 1) # for å stoppe loggingen
 
-        lagring_fil = threading.Thread(target=metoder.lagring_data)
+        lagring_fil = threading.Thread(target=metoder.lagring_av_tideligere_data)
         lagring_fil.start()
 
         add_Button(knapp_nummer)
@@ -80,7 +80,9 @@ def tidligere_logg(tall):
 
 def add_Button(nummer):
    ###command= lambda: action(someNumber)
-    ttk.Button(mainframe3, text=('Logg ',nummer),command=lambda: tidligere_logg(nummer)).grid(column=1, row=nummer)
+    l1 = ['Logg: ', str(nummer)]
+    s = ''.join(l1)
+    ttk.Button(mainframe3, text=s,command=lambda: tidligere_logg(nummer)).grid(column=1, row=nummer)
 
 #----------------------------------------------------------------------------
 
@@ -91,7 +93,7 @@ f2 = Figure(figsize=(10, 3), dpi=70)
 a2 = f2.add_subplot(111)
 
 root = Tk()
-root.title("Feet to Meters")
+root.title("Gruppe 2 Analyse av data")
 #-----------------------------------------------------------------------
 
 mainframe = ttk.Frame(root, padding="3 3 12 12")
