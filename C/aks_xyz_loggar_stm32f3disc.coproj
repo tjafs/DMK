@@ -92,14 +92,14 @@
     <File name="metodar/UART_metodar.c" path="metodar/UART_metodar.c" type="1"/>
     <File name="metodar/I2C_metodar.c" path="metodar/I2C_metodar.c" type="1"/>
     <File name="cmsis_lib/source/stm32f30x_exti.c" path="cmsis_lib/source/stm32f30x_exti.c" type="1"/>
-    <File name="metodar/TIM_metodar.c" path="metodar/TIM_metodar.c" type="1"/>
     <File name="cmsis_lib/include/stm32f30x_can.h" path="cmsis_lib/include/stm32f30x_can.h" type="1"/>
+    <File name="metodar/TIM_metodar.c" path="metodar/TIM_metodar.c" type="1"/>
     <File name="cmsis_boot/startup/startup_stm32f30x.S" path="cmsis_boot/startup/startup_stm32f30x.S" type="1"/>
     <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
+    <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
     <File name="stm32f3_discovery" path="" type="2"/>
     <File name="cmsis_lib/source/stm32f30x_misc.c" path="cmsis_lib/source/stm32f30x_misc.c" type="1"/>
-    <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
     <File name="cmsis/core_cm4.h" path="cmsis/core_cm4.h" type="1"/>
     <File name="example/GPIO_Toggle_Example.c" path="example/GPIO_Toggle_Example.c" type="1"/>
     <File name="cmsis_lib/include/stm32f30x_tim.h" path="cmsis_lib/include/stm32f30x_tim.h" type="1"/>
@@ -121,18 +121,18 @@
     <File name="stm32f3_discovery/stm32f3_discovery_lsm303dlhc.c" path="stm32f3_discovery/stm32f3_discovery_lsm303dlhc.c" type="1"/>
     <File name="stdio" path="" type="2"/>
     <File name="cmsis_lib/source/stm32f30x_spi.c" path="cmsis_lib/source/stm32f30x_spi.c" type="1"/>
+    <File name="metodar/LSM303DLHC_metodar.c" path="metodar/LSM303DLHC_metodar.c" type="1"/>
+    <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
     <File name="metodar/SPI1_metodar.c" path="metodar/SPI1_metodar.c" type="1"/>
     <File name="cmsis_boot/stm32f30x.h" path="cmsis_boot/stm32f30x.h" type="1"/>
-    <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
     <File name="cmsis_lib/source/stm32f30x_syscfg.c" path="cmsis_lib/source/stm32f30x_syscfg.c" type="1"/>
-    <File name="metodar/LSM303DLHC_metodar.c" path="metodar/LSM303DLHC_metodar.c" type="1"/>
     <File name="metodar/avbrots_metodar.c" path="metodar/avbrots_metodar.c" type="1"/>
     <File name="cmsis_lib/source/stm32f30x_i2c.c" path="cmsis_lib/source/stm32f30x_i2c.c" type="1"/>
     <File name="cmsis_lib/include/stm32f30x_syscfg.h" path="cmsis_lib/include/stm32f30x_syscfg.h" type="1"/>
     <File name="example/stm32f30x_it.h" path="example/stm32f30x_it.h" type="1"/>
     <File name="metodar/LCD_metodar.c" path="metodar/LCD_metodar.c" type="1"/>
-    <File name="metodar/LINMOT_metodar.c" path="metodar/LINMOT_metodar.c" type="1"/>
     <File name="stm32f3_discovery/stm32f3_discovery.h" path="stm32f3_discovery/stm32f3_discovery.h" type="1"/>
+    <File name="metodar/LINMOT_metodar.c" path="metodar/LINMOT_metodar.c" type="1"/>
     <File name="cmsis_lib/source/stm32f30x_tim.c" path="cmsis_lib/source/stm32f30x_tim.c" type="1"/>
     <File name="cmsis_lib/include/stm32f30x_spi.h" path="cmsis_lib/include/stm32f30x_spi.h" type="1"/>
     <File name="cmsis_lib/source/stm32f30x_gpio.c" path="cmsis_lib/source/stm32f30x_gpio.c" type="1"/>

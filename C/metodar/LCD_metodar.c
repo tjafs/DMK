@@ -142,40 +142,8 @@ void LCD_tal2siff_4( uint16_t tal ) {
         }
 }
 
-// Rutinene som realiserer dei 2 typane skrivesyklus mot LCD
-//----------------------------------------------------------
-void LCD_skrivesyklus_data(uint8_t databussverdi) {
-
-// Sett nå opp sekvens iflg. tidsdiagram for LCD for skriving av kommando (RS = 0)
 
 
-    GPIOC->ODR = (0xFFF0 | LCD_Write | LCD_RS_data);
-//
-    GPIOC->ODR = (0xFFF0 | LCD_Write | LCD_RS_data | LCD_Enable);
-
-    GPIOA->ODR = databussverdi;  //Legg ut kommando på databussen
-
-        vent_400nsek();  //Må vera med
-
-    GPIOC->ODR = (0xFFF0 | LCD_Write | LCD_RS_data);
-
-}
-
-void LCD_skrivesyklus_kommando(uint8_t databussverdi) {
-
-	// Sett nå opp sekvens iflg. tidsdiagram for LCD for skriving av kommando (RS = 0)
-
-    GPIOC->ODR = (0xFFF0 | LCD_Write | LCD_RS_kommando);
-	//
-    GPIOC->ODR = (0xFFF0 | LCD_Write | LCD_RS_kommando | LCD_Enable);
-
-    GPIOA->ODR = databussverdi; //Legg ut ascii-teikn på databussen
-
-      vent_400nsek();  //Må vera med
-
-    GPIOC->ODR = (0xFFF0 | LCD_Write | LCD_RS_kommando);
-
-}
 //void LCD_skrivesyklus_data(uint8_t databussverdi) {
 //
 //// Sett nå opp sekvens iflg. tidsdiagram for LCD for skriving av kommando (RS = 0)
