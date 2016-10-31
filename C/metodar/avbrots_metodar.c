@@ -86,12 +86,6 @@ void SysTick_Handler(void) {
 
 	}
 
-	tikkteljar_diodar++;
-	if(tikkteljar_diodar >= 200) { //Har det gått 200 x 1 millisek sidan siste
-			                              // oppdatering av diodebitane), så gi melding til
-		oppdater_diodar = 1;          //tilstandsmaskinsmetoden.
-		tikkteljar_diodar = 0;
-	}
 
 	GPIOC->ODR = GPIOC->ODR ^ GPIO_Pin_6; // Blinkesignal ut paa testpinne (PC6).
 

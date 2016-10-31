@@ -91,12 +91,6 @@
       </source>
       <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="1581ae51edb">
       </source>
-      <source file="..\..\..\metodar\avbrots_metodar.c" lastModified="1581ae51b2f">
-         <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f30x_gpio.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
-         <include file="..\..\..\metodar\extern_dekl_globale_variablar.h"/>
-      </source>
       <source file="..\..\..\example\stm32f30x_it.h" lastModified="1581ae51b25">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
       </source>
