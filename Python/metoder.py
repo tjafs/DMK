@@ -63,4 +63,3 @@ def lagring_av_kontinuerlig_data(num,data1,data2):
     del data2
 
     return
-
