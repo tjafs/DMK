@@ -49,13 +49,6 @@ int main(void)  {
 
 	while(1) {
 
-		if(oppdater_diodar) {  // Blir gjort kvart 200. msek, sjå fila avbrotsmetodar
-
-			// GPIO_sett_kompassmoenster(diode_moenster);
-			// diode_moenster = diode_moenster + 0x2;
-			oppdater_diodar = 0;
-
-		}
 
 		if(gyldig_trykk_av_USERbrytar) { //Er brytaren trykt ned sidan sist?
                                          // Skal då laga ei ekstramelding.
@@ -256,7 +249,6 @@ int main(void)  {
 //
 //extern int32_t pulsteller;
 //
-//uint16_t lcd_wait = 0;
 //
 //int main(void)
 //{
@@ -301,34 +293,6 @@ int main(void)  {
 //		int16_t y = (buffer[4] << 8) | buffer[5];
 //		int16_t z = (buffer[2] << 8) | buffer[3];
 //
-//
-//        // Skriv LCD
-//		if(lcd_wait++ > 50){
-//			lcd_wait = 0;
-//
-//			LCD_kommando(0x01);
-//
-//			i = 40;
-//			while(i-- > 0){
-//				vent_100usek();
-//			}
-//
-//			// Skriv data til LCD
-//			LCD_pos(0, 0);
-//			char xs[10];
-//			sprintf(xs, "%i", x);
-//			LCD_tekst(xs);
-//
-//			LCD_pos(1, 0);
-//			char ys[10];
-//			sprintf(ys, "%i", y);
-//			LCD_tekst(ys);
-//
-//			LCD_pos(2, 0);
-//			char zs[10];
-//			sprintf(zs, "%i", z);
-//			LCD_tekst(zs);
-//		}
 //
 //		char log[30];
 //		sprintf(log, "%i\n", z);
