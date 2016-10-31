@@ -76,7 +76,6 @@ def stop_knapp():
         knapp_nummer += 1
 
         stop1 = 1
-        print('antall filer: ',antall_filer)
 
 #---------------------------------------------------------------------
 def tidligere_logg(tall):
@@ -89,7 +88,7 @@ def add_Button(nummer):
    ###command= lambda: action(someNumber)
     l1 = ['Logg: ', str(nummer)]
     s = ''.join(l1)
-    ttk.Button(mainframe3, text=s,command=lambda: tidligere_logg(nummer)).grid(column=1, row=nummer)
+    ttk.Button(frame3, text=s,command=lambda: tidligere_logg(nummer)).grid(column=1, row=nummer)
 
 #----------------------------------------------------------------------------
 def avslutt():
@@ -124,54 +123,54 @@ root = Tk()
 root.title("Gruppe 2 Analyse av data")
 #-----------------------------------------------------------------------
 
-mainframe = ttk.Frame(root, padding="3 3 12 12")
-mainframe.grid(column=0, row=0)
-mainframe.columnconfigure(0, weight=1)
-mainframe.rowconfigure(0, weight=1)
+frame = ttk.Frame(root, padding="5 5 5 5")
+frame.grid(column=0, row=0)
+frame.columnconfigure(0, weight=1)
+frame.rowconfigure(0, weight=1)
 
-ttk.Button(mainframe, text='Start',command=start_knapp).grid(column=1, row=1)
-ttk.Button(mainframe, text='Stop',command=stop_knapp).grid(column=1, row=2)
-ttk.Button(mainframe, text='Avslutt',command=avslutt).grid(column=1, row=3)
+ttk.Button(frame, text='Start',command=start_knapp).grid(column=1, row=1)
+ttk.Button(frame, text='Stop',command=stop_knapp).grid(column=1, row=2)
+ttk.Button(frame, text='Avslutt',command=avslutt).grid(column=1, row=3)
 
 #-----------------------------------------------------------------------
 
-mainframe2 = ttk.Frame(root, padding="3 3 12 12")
-mainframe2.grid(column=1, row=0)
-mainframe2.columnconfigure(0, weight=1)
-mainframe2.rowconfigure(0, weight=1)
+frame2 = ttk.Frame(root, padding="5 5 20 20")
+frame2.grid(column=1, row=0)
+frame2.columnconfigure(0, weight=1)
+frame2.rowconfigure(0, weight=1)
 
-Figure = FigureCanvasTkAgg(f,mainframe2)
+Figure = FigureCanvasTkAgg(f,frame2)
 Figure.show()
 Figure.get_tk_widget().grid(column=2, row=2)
 
 bilde = tkinter.PhotoImage(file='b.gif')
-ttk.Label(mainframe2, image=bilde).grid(column=2, row=1)
+ttk.Label(frame2, image=bilde).grid(column=2, row=1)
 
 #-----------------------------------------------------------------------
 
-mainframe3 = ttk.Frame(root, padding="3 3 12 12")
-mainframe3.grid(column=0, row=1)
-mainframe3.columnconfigure(0, weight=1)
-mainframe3.rowconfigure(0, weight=1)
+frame3 = ttk.Frame(root, padding="3 3 20 20")
+frame3.grid(column=0, row=1)
+frame3.columnconfigure(0, weight=1)
+frame3.rowconfigure(0, weight=1)
 
 
 
 #-----------------------------------------------------------------------
-mainframe4 = ttk.Frame(root, padding="3 3 12 12")
-mainframe4.grid(column=1, row=1)
-mainframe4.columnconfigure(0, weight=1)
-mainframe4.rowconfigure(0, weight=1)
+frame4 = ttk.Frame(root, padding="6 6 20 20")
+frame4.grid(column=1, row=1)
+frame4.columnconfigure(0, weight=1)
+frame4.rowconfigure(0, weight=1)
 
-ttk.Label(mainframe4,text='Tidligere plott').grid(column=2, row=1)
+ttk.Label(frame4,text='Tidligere plott').grid(column=2, row=1)
 
-Figure = FigureCanvasTkAgg(f2,mainframe4)
+Figure = FigureCanvasTkAgg(f2,frame4)
 Figure.show()
 Figure.get_tk_widget().grid(column=2, row=2)
 
 #-----------------------------------------------------------------------
+for child in frame.winfo_children(): child.grid_configure(padx=5, pady=5)
+for child in frame2.winfo_children(): child.grid_configure(padx=2, pady=2)
 
-for child in mainframe.winfo_children(): child.grid_configure(padx=5, pady=5)
-for child in mainframe2.winfo_children(): child.grid_configure(padx=2, pady=2)
 
 ani = animation.FuncAnimation(f, animate, interval=1000)
 ani2 = animation.FuncAnimation(f2, animate2, interval=1000)
