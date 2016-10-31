@@ -6,7 +6,7 @@ import serial
 import matplotlib.pyplot as graf
 import pickle
 import metoder
-print('ok')
+print('okuyvbluknk')
 class P:
 
     def __init__(self,x,skyv,tidsomloepnr,x_data,tid_data,runde):
