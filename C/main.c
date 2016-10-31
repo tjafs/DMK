@@ -49,13 +49,6 @@ int main(void)  {
 
 	while(1) {
 
-		if(oppdater_diodar) {  // Blir gjort kvart 200. msek, sjå fila avbrotsmetodar
-
-			GPIO_sett_kompassmoenster(diode_moenster);
-			diode_moenster = diode_moenster + 0x2;
-			oppdater_diodar = 0;
-
-		}
 
 		if(gyldig_trykk_av_USERbrytar) { //Er brytaren trykt ned sidan sist?
                                          // Skal då laga ei ekstramelding.
