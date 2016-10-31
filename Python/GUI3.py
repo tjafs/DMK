@@ -10,6 +10,8 @@ import metoder
 from tkinter import *
 from tkinter import ttk
 import tkinter
+import os
+
 
 class knapp(object):
     def __init__(self,x_data,y_data):
@@ -21,6 +23,7 @@ knapp_nummer = 1
 graf2 = 0
 stop1 = 0
 start = 0
+antall_filer = 0
 # opptatering av graf 1-------------------------------
 def animate(i):
     if kor == 1:
@@ -61,6 +64,8 @@ def stop_knapp():
     if stop1 == 0:
         global kor
         kor = 0
+        global antall_filer
+        antall_filer += 1
         global knapp_nummer
         metoder.lagring_av_kontinuerlig_data(2, 1, 1) # for å stoppe loggingen
 
@@ -71,6 +76,8 @@ def stop_knapp():
         knapp_nummer += 1
 
         stop1 = 1
+        print('antall filer: ',antall_filer)
+
 #---------------------------------------------------------------------
 def tidligere_logg(tall):
     global graf2
@@ -85,6 +92,27 @@ def add_Button(nummer):
     ttk.Button(mainframe3, text=s,command=lambda: tidligere_logg(nummer)).grid(column=1, row=nummer)
 
 #----------------------------------------------------------------------------
+def avslutt():
+    metoder.lagring_av_kontinuerlig_data(2, 1, 1)  # for å stoppe loggingen
+
+# Fjerne filene som er blitt laget
+    global antall_filer
+    for i in range(1,antall_filer+1):
+        l1 = ['Logg_', str(i), '.pkl']
+        fil = ''.join(l1)
+        os.path.isfile(fil)
+        os.remove(fil)
+
+    i = 1
+    while i <= 2:
+        l1 = ['Kontinuerlig_', str(i), '.pkl']
+        fil = ''.join(l1)
+        os.path.isfile(fil)
+        os.remove(fil)
+        i += 1
+
+    quit()
+#-----------------------------------------------------------------------------
 
 f = Figure(figsize=(10, 3), dpi=70)
 a = f.add_subplot(111)
@@ -103,7 +131,7 @@ mainframe.rowconfigure(0, weight=1)
 
 ttk.Button(mainframe, text='Start',command=start_knapp).grid(column=1, row=1)
 ttk.Button(mainframe, text='Stop',command=stop_knapp).grid(column=1, row=2)
-ttk.Button(mainframe, text='Avslutt').grid(column=1, row=3)
+ttk.Button(mainframe, text='Avslutt',command=avslutt).grid(column=1, row=3)
 
 #-----------------------------------------------------------------------
 
