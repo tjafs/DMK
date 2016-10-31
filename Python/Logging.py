@@ -5,7 +5,7 @@ import numpy as np
 import serial
 import matplotlib.pyplot as graf
 import pickle
-import Metoder
+import metoder
 
 class P:
 
@@ -70,7 +70,7 @@ def start_lesing():
         p1 = P(0, 0, 0, 0, 0, 0)
         l = 1
 
-        Metoder.output(1,0,0)
+        metoder.output(1,0,0)
 
 
         while (l <= 10):
@@ -91,10 +91,10 @@ def start_lesing():
             tid.append(p1.gettid_data())
             x_data.append(p1.getx_data())
 
-            Metoder.output(1,tid,x_data)
+            metoder.output(1,tid,x_data)
 
 
-            (stop,stop2) = Metoder.input(2)
+            (stop,stop2) = metoder.input(2)
 
 
             if stop == 1:
