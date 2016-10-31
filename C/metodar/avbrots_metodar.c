@@ -100,11 +100,14 @@ void SysTick_Handler(void) {
 	kommando = USART2_les();
 	if( kommando == 'k')  {  //Køyr i gong sending av målingane til loggaren
 		send_maalingar_til_loggar = 1;
+		GPIOE->ODR = GPIOE->ODR ^ GPIO_Pin_9;
 		legg_til_meldingshovud = 1; //Aller først skal hovudprogrammet leggja til STX
+
 
 	}
 	if( kommando == 's')  {  //Stopp sending av målingane til loggaren
 		send_maalingar_til_loggar = 0;
+		GPIOE->ODR = GPIOE->ODR ^ GPIO_Pin_9;
 		legg_til_meldingshale = 1;
 
 	}
