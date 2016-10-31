@@ -1,76 +1,55 @@
-import threading
-import queue
-import time
-import numpy as np
-import serial
-import matplotlib.pyplot as mpl
-
-#metode for å lage en x-datastreng for seg selv, som kan kalles opp som en tråd.
-#
-def lag_x_data(ut_data, inn_data, status):
-    while(status==0):
-        #time.sleep(0.1)
-        i = len(inn_data)
-        #print('Antall elementer avlest: ')
-        #print(i)
-
-        if(i>50):
-            if inn_data[i-1] == 'Y':
-                #original fra x raa data: ut_data.append( 4096 * hexascii2int(inn_data[i + 1]) + 256 * hexascii2int(inn_data[i + 2]) + 16 * hexascii2int(inn_data[i + 3]) + hexascii2int(inn_data[i + 4]))
-                ut_data.append( 4096 * hexascii2int(inn_data[i - 5]) + 256 * hexascii2int(inn_data[i - 4]) + 16 * hexascii2int(inn_data[i - 3]) + hexascii2int(inn_data[i - 2]))
-           # else: print ('finner ikke X data verdier')
-
-        #else: print ('lengden til mcmeldingar er ikke over 5 enda')
+import pickle
 
 
-#-------------------------------------------------------------------------
-# Kode for ein traad som les serieporten konfigurert i hovudtraaden main.
-# Lesinga startar naar traaden faar ein 'k'(koeyr) via ein kommandokoe og
-# stansar naar traaden faar ein 's' og etterpaa les meldingshalen ETX.
-# Alle mottatte teikn blir lagt inn i ei meldingsliste.
-# Serieporten blir stengt til slutt..
-#-------------------------------------------------------------------------
 
-def seriekomm(serieport, kommando_koe, meldingar):  # Innhald i traaden
+class Company(object):
+    def __init__(self,x_data,y_data):
+        self.x_data = x_data
+        self.y_data = y_data
+
+global num
+num = 0
+
+
+def lagring_data():
+    global num
+    num += 1
+    x = []
+    y = []
+    (x,y) = input(1)
+
+    l1 = ['Logg_', str(num), '.pkl']
+    s = ''.join(l1)
+
+    with open(str(s), 'wb') as output:
+        company2 = Company(x, y)
+        pickle.dump(company2, output, pickle.HIGHEST_PROTOCOL)
+    del company2
+    return
+
+def input(nummer):
+
+    l1 = ['company_data', str(nummer), '.pkl']
+    s = ''.join(l1)
+
     try:
-        ny_kommando = kommando_koe.get()  # Vil henga til han faar foerste kommandoen
-    except Exception:
-        pass  # Ignorer, men kvitter ut evt. unntak som oppstaar.
+        with open(str(s), 'rb') as input:
+            company1 = pickle.load(input)
+            x = company1.x_data
+            y = company1.y_data
+    except EOFError:
+        return 'jalla'
+    return (x,y)
 
-    tilstand = ny_kommando
+def output(nummer,data1,data2):
 
-    while tilstand == 'k':  # Saa lenge ein vil k(oeyra logging)
+    l1 = ['company_data', str(nummer), '.pkl']
+    s = ''.join(l1)
 
-        #		while serieport.inWaiting() > 0:
-        teikn = str(serieport.read(1), encoding='utf-8')  # Les eitt teikn.  #KT La til convert til str
-                                                          # Vil blokkera/henga til det er kome noko aa lesa
-        meldingar.append(teikn)
+    with open(str(s), 'wb') as output:
+        company2 = Company(data1, data2)
+        pickle.dump(company2, output, pickle.HIGHEST_PROTOCOL)
+    del company2
 
-        try:
-            ny_kommando = kommando_koe.get(block=False)  # Her skal ein ikkje henga/blokkera
-        except Exception:  # men bare sjekka om det er kome ny kommando
-            pass  # Her faar ein eit"Empty"-unntak kvar gong ein les ein tom koe. Dette skal
-        # ignorerast, men kvitterast ut.
-
-        if ny_kommando == 's':
-            tilstand = ny_kommando  # Stans logging men fullfoer lesing t.o.m meldingshalen ETX
-
-    while teikn != '\x03':  # Heilt til og med meldingshalen ETX
-        #		while serieport.inWaiting() > 0:
-        teikn = str(serieport.read(1), encoding='utf-8')  # Les eitt teikn. #KT La til convert til str
-        meldingar.append(teikn)
-
-    serieport.close()  # Steng ned
-    print(serieport.name, 'er stengt')
-
-
-
-# --------------------------------------------------------------------------
-# Metode for aa gi ut int-verdien til eit hexadesimalt teikn i ASCII-format
-# --------------------------------------------------------------------------
-def hexascii2int(hex_teikn):
-    if '0' <= hex_teikn <= '9':
-        return (int(ord(hex_teikn) - 48))  # ASCII-koden for '0' er 0x30 = 48
-    elif 'A' <= hex_teikn <= 'F':
-        return (int(ord(hex_teikn) - 55))  # ASCII-koden for 'A' er 0x41 = 65
+    return
 
