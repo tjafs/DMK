@@ -36,7 +36,7 @@ void USART2_skriv(uint8_t ch);
 uint8_t USART2_les(void);
 void USART2_skriv_streng(uint8_t *streng);
 void USART2_send_tid8_og_data16(uint8_t tid, int16_t loggeverdi);
-void USART2_send_tid8_og_data16x3(uint8_t tid, int16_t loggeverdi1, int16_t loggeverdi2, int16_t loggeverdi3);
+void USART2_send_tid8_og_data16x3(uint8_t tid,uint8_t sensor, int16_t loggeverdi1, int16_t loggeverdi2, int16_t loggeverdi3);
 void USART2_handtering(uint8_t loggedata);
 void USART2_handtering1(void);
 void USART2_handtering2(uint16_t teljar);
@@ -290,8 +290,8 @@ void USART2_send_tid8_og_data16(uint8_t tid, int16_t loggeverdi)  {
 	USART2_skriv((uint8_t)(hex2ascii_tabell[(data0 & 0x000F)])); // Send LS Hex-siffer av dei 16 bitane
 }
 
-void USART2_send_tid8_og_data16x3(uint8_t tid, int16_t loggeverdi1, int16_t loggeverdi2, int16_t loggeverdi3)  {
-	uint8_t tid0, tid1;
+void USART2_send_tid8_og_data16x3(uint8_t tid, uint8_t sensor,int16_t loggeverdi1, int16_t loggeverdi2, int16_t loggeverdi3)  {
+	uint8_t tid0, tid1,sensor0,sensor1;
     int16_t data0, data1, data2, data3;
 
     tid0 = tid;
@@ -300,6 +300,13 @@ void USART2_send_tid8_og_data16x3(uint8_t tid, int16_t loggeverdi1, int16_t logg
 	USART2_skriv('T');
 	USART2_skriv((uint8_t)(hex2ascii_tabell[(tid1 & 0x0F)]));   // Send MS Hex-siffer av ein tidsbyten
 	USART2_skriv((uint8_t)(hex2ascii_tabell[(tid0 & 0x0F)])); // Send LS Hex-siffer av ein tidsbyten
+
+    sensor0 = sensor;
+    sensor1 = sensor0 >> 4;
+
+	USART2_skriv('S');
+	USART2_skriv((uint8_t)(hex2ascii_tabell[(sensor1 & 0x0F)]));   // Send MS Hex-siffer av ein tidsbyten
+	USART2_skriv((uint8_t)(hex2ascii_tabell[(sensor0 & 0x0F)])); // Send LS Hex-siffer av ein tidsbyten
 
 	data0 = loggeverdi1; //
 	data1 = data0 >> 4; // Under skifting er det viktig at forteiknet blir med, difor int.
@@ -333,7 +340,13 @@ void USART2_send_tid8_og_data16x3(uint8_t tid, int16_t loggeverdi1, int16_t logg
 	USART2_skriv((uint8_t)(hex2ascii_tabell[(data2 & 0x000F)]));
 	USART2_skriv((uint8_t)(hex2ascii_tabell[(data1 & 0x000F)]));
 	USART2_skriv((uint8_t)(hex2ascii_tabell[(data0 & 0x000F)])); // Send LS Hex-siffer av dei 16 bitane
+
+
 }
+
+
+
+
 void USART2_handtering(uint8_t loggedata)  {
     uint8_t data;
 	USART2_skriv('D');

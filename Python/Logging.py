@@ -85,6 +85,10 @@ def start_lesing():
 
                 if teikn == 'Y':
                     a = 1
+                if teikn == 'S':
+                    print('S')
+                print(teikn)
+                print('her')
 
             p1 = (sortering(data, p1))
 
@@ -181,6 +185,8 @@ def start_lesing():
         print(serieport.name, 'er open')
     else:
         serieport.open()
+
+
 
     starting = threading.Thread(target=lesing, args=(serieport, kommando))
     starting.start()

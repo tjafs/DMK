@@ -12,7 +12,7 @@
 //---------------------------------------
 #include "stm32f30x.h"
 #include "stm32f3_discovery_lsm303dlhc.h"
-
+#include "Instalering_av_perifermodul.h"
 //---------------------------------------
 // Globale variablar
 //---------------------------------------
@@ -32,11 +32,13 @@ void GPIO_lys_av(void);
 void GPIO_lys_paa(void);
 void USART2_skriv(uint8_t ch);
 void USART2_send_tid8_og_data16(uint8_t tid, int16_t loggeverdi);
-void USART2_send_tid8_og_data16x3(uint8_t tid, int16_t loggeverdi1, int16_t loggeverdi2, int16_t loggeverdi3);
+void USART2_send_tid8_og_data16x3(uint8_t tid,int8_t sensor, int16_t loggeverdi1, int16_t loggeverdi2, int16_t loggeverdi3);
 int8_t SPI2_SendByte_Sokkel1(int8_t data);
 int8_t SPI1_SendByte_gyro(int8_t data);
 int8_t les_gyrotemp(void);
 void vent_400nsek(void);
+void ADC_oppstart(void);
+uint8_t ADCVerdi(void);
 
 //---------------------------------------
 // Funksjonsdeklarasjonar
@@ -46,6 +48,8 @@ int main(void)  {
     uint16_t a;
 
     maskinvare_init();
+
+
 
 	while(1) {
 
@@ -65,6 +69,11 @@ int main(void)  {
 
         	diode_moenster = 0; 		  // Nullstill diodemønsteret etter eit brytartrykk
         }
+
+		//uint8_t adcverdi = ADCVerdi();
+
+		//USART2_skriv('A');
+		//USART2_skriv(adcverdi);
 
 	 // Her er hovudoppgåva til dette prosjektet, nemleg avlesing av 3D akselerasjonsdata og sending av dette
 	 // til PC.
@@ -97,12 +106,16 @@ int main(void)  {
 				a_zf_k = (a1*a_zf_k_1 + b1*a_z)/100; //Nedsamplingsfilter, sjå deklarasjonsfila
 				a_zf_k_1 = a_zf_k;
 
+			// sensor lesning
+				int8_t sensor =  0;//ADCVerdi();
+
 			 // Send kvar tiande måling
 				if(send_maaling) {
 
                 	samplenr++;                      // Oppdatering av tidsreferanse
 
-    		        USART2_send_tid8_og_data16x3(samplenr, (int16_t) a_xf_k, (int16_t) a_yf_k, (int16_t) a_zf_k);
+    		        USART2_send_tid8_og_data16x3(samplenr,(int8_t) sensor, (int16_t) a_xf_k, (int16_t) a_yf_k, (int16_t) a_zf_k);
+
 
     		        send_maaling = 0; // Sendinga er nå utført.
                 }

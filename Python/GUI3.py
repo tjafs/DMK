@@ -81,8 +81,6 @@ def stop_knapp():
 def tidligere_logg(tall):
     global graf2
     graf2 = tall
-    print('yo')
-    print(tall)
 
 def add_Button(nummer):
    ###command= lambda: action(someNumber)

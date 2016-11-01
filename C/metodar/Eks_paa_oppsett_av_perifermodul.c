@@ -48,10 +48,6 @@ void ADC_oppstart(void){
 
 
 
-
-
-
-
 	ADC_InitStructure.ADC_ContinuousConvMode = ADC_ContinuousConvMode_Enable;
 	ADC_InitStructure.ADC_Resolution = ADC_Resolution_8b;
 	ADC_InitStructure.ADC_ExternalTrigConvEvent = ADC_ExternalTrigConvEvent_0;

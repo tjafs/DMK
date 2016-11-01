@@ -42,7 +42,7 @@ void maskinvare_init(void) {
 	gyro_oppstart();
  	USART2_oppstart();
 	TIM_oppstart();
-//	LinMot_oppstart();
+	LinMot_oppstart();
 	SysTick_oppstart();
 	avbrot_oppstart();
 
