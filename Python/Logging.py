@@ -72,7 +72,7 @@ def start_lesing():
 
         metoder.lagring_av_kontinuerlig_data(1,0,0)
 
-
+        kl = 99
         while (l <= 10):
             a = 0
             data = []
@@ -86,9 +86,14 @@ def start_lesing():
                 if teikn == 'Y':
                     a = 1
                 if teikn == 'S':
-                    print('S')
-                print(teikn)
-                print('her')
+                    kl = 1
+
+                if kl <= 3:
+                    print(teikn)
+                    kl += 1
+
+                #print(teikn)
+                #print('her')
 
             p1 = (sortering(data, p1))
 

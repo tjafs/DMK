@@ -1,85 +1,85 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dependencies>
-   <includePath signature="/I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK2 /I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK2\C\example /I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK2\C\metodar /I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK2\C /I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK2\C\cmsis_boot /I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK2\C\cmsis /I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK2\C\cmsis_lib /I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK2\C\stm32f3_discovery /I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK2\C\cmsis_lib\include">
-      <source file="..\..\..\metodar\SPI2_metodar.c" lastModified="1581f3c09f5">
+   <includePath signature="/I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK3456\C\cmsis_lib\include /I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK3456\C\stm32f3_discovery /I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK2 /I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK3456\C\example /I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK3456\C\cmsis_lib /I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK2\C\metodar /I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK3456\C\cmsis_boot /I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK2\C /I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK3456\C /I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK3456 /I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK3456\C\cmsis /I..\..\..\..\..\Users\halld\Google Drive\Halldor\UIS\Semester 5\ELE340 Datamaskin-konstruksjon\DMK3456\C\metodar">
+      <source file="..\..\..\metodar\SPI2_metodar.c" lastModified="158210db6e2">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_spi.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
          <include file="..\..\..\metodar\extern_dekl_globale_variablar.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f30x_syscfg.h" lastModified="1581f3c0962">
+      <source file="..\..\..\cmsis_lib\include\stm32f30x_syscfg.h" lastModified="158210db66a">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f30x_exti.c" lastModified="1581f3c097e">
+      <source file="..\..\..\cmsis_lib\source\stm32f30x_exti.c" lastModified="158210db67d">
          <include file="..\..\..\cmsis_lib\include\stm32f30x_exti.h"/>
       </source>
-      <source file="..\..\..\example\GPIO_Toggle_Example.c" lastModified="1581f3c09c1">
+      <source file="..\..\..\example\GPIO_Toggle_Example.c" lastModified="158210db6bc">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f30x_rcc.c" lastModified="1581f3c0995">
+      <source file="..\..\..\cmsis_lib\source\stm32f30x_rcc.c" lastModified="158210db68d">
          <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f30x_gpio.c" lastModified="1581f3c0984">
+      <source file="..\..\..\cmsis_lib\source\stm32f30x_gpio.c" lastModified="158210db67d">
          <include file="..\..\..\cmsis_lib\include\stm32f30x_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f30x_can.c" lastModified="1581f3c0979">
+      <source file="..\..\..\cmsis_lib\source\stm32f30x_can.c" lastModified="158210db66e">
          <include file="..\..\..\cmsis_lib\include\stm32f30x_can.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f30x_syscfg.c" lastModified="1581f3c09a7">
+      <source file="..\..\..\cmsis_lib\source\stm32f30x_syscfg.c" lastModified="158210db69d">
          <include file="..\..\..\cmsis_lib\include\stm32f30x_syscfg.h"/>
       </source>
-      <source file="..\..\..\cmsis_boot\stm32f30x.h" lastModified="1581f3c0d0f">
+      <source file="..\..\..\cmsis_boot\stm32f30x.h" lastModified="158210dba11">
          <include file="..\..\..\cmsis\core_cm4.h"/>
          <include file="..\..\..\cmsis_boot\system_stm32f30x.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f30x_misc.h" lastModified="1581f3c0952">
+      <source file="..\..\..\cmsis_lib\include\stm32f30x_misc.h" lastModified="158210db658">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h" lastModified="1581f3c0958">
+      <source file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h" lastModified="158210db658">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f30x_can.h" lastModified="1581f3c093c">
+      <source file="..\..\..\cmsis_lib\include\stm32f30x_can.h" lastModified="158210db638">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
       </source>
-      <source file="..\..\..\metodar\TIM_metodar.c" lastModified="1581f3c09fb">
+      <source file="..\..\..\metodar\TIM_metodar.c" lastModified="158210db6e2">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_tim.h"/>
          <include file="..\..\..\metodar\extern_dekl_globale_variablar.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f30x_adc.c" lastModified="1581f3d8303">
+      <source file="..\..\..\cmsis_lib\source\stm32f30x_adc.c" lastModified="15821128e81">
          <include file="..\..\..\cmsis_lib\include\stm32f30x_adc.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
       </source>
-      <source file="..\..\..\example\system_stm32f30x.c" lastModified="1581f3c09d3">
+      <source file="..\..\..\example\system_stm32f30x.c" lastModified="158210db6bc">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f30x_adc.h" lastModified="1581f3d82f7">
+      <source file="..\..\..\cmsis_lib\include\stm32f30x_adc.h" lastModified="15821128e71">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
       </source>
-      <source file="..\..\..\stm32f3_discovery\stm32f3_discovery.h" lastModified="1581f3c0a20">
+      <source file="..\..\..\stm32f3_discovery\stm32f3_discovery.h" lastModified="158210db701">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_exti.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_syscfg.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f30x_usart.h" lastModified="1581f3c0973">
+      <source file="..\..\..\cmsis_lib\include\stm32f30x_usart.h" lastModified="158210db66e">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
       </source>
-      <source file="..\..\..\metodar\LSM303DLHC_metodar.c" lastModified="1581f3c09ec">
+      <source file="..\..\..\metodar\LSM303DLHC_metodar.c" lastModified="158210db6d2">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
          <include file="..\..\..\stm32f3_discovery\stm32f3_discovery_lsm303dlhc.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f30x_usart.c" lastModified="1581f3c09b5">
+      <source file="..\..\..\cmsis_lib\source\stm32f30x_usart.c" lastModified="158210db6ac">
          <include file="..\..\..\cmsis_lib\include\stm32f30x_usart.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
       </source>
-      <source file="..\..\..\stm32f3_discovery\stm32f3_discovery.c" lastModified="1581f3c0a1b">
+      <source file="..\..\..\stm32f3_discovery\stm32f3_discovery.c" lastModified="158210db701">
          <include file="..\..\..\stm32f3_discovery\stm32f3_discovery.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_can.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_gpio.h"/>
@@ -91,23 +91,23 @@
          <include file="..\..\..\cmsis_lib\include\stm32f30x_exti.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_misc.h"/>
       </source>
-      <source file="..\..\..\stm32f3_discovery\stm32f3_discovery_l3gd20.h" lastModified="1581f3c0a2a">
+      <source file="..\..\..\stm32f3_discovery\stm32f3_discovery_l3gd20.h" lastModified="158210db701">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
       </source>
-      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="1581f3c0cfa">
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="158210dba01">
       </source>
-      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="1581f3c0cef">
+      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="158210db9f1">
       </source>
-      <source file="..\..\..\metodar\avbrots_metodar.c" lastModified="1581f3c0a05">
+      <source file="..\..\..\metodar\avbrots_metodar.c" lastModified="158210db6e2">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
          <include file="..\..\..\metodar\extern_dekl_globale_variablar.h"/>
       </source>
-      <source file="..\..\..\example\stm32f30x_it.h" lastModified="1581f3c09cd">
+      <source file="..\..\..\example\stm32f30x_it.h" lastModified="158210db6bc">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
       </source>
-      <source file="..\..\..\stm32f3_discovery\stm32f3_discovery_l3gd20.c" lastModified="1581f3c0a24">
+      <source file="..\..\..\stm32f3_discovery\stm32f3_discovery_l3gd20.c" lastModified="158210db701">
          <include file="..\..\..\stm32f3_discovery\stm32f3_discovery_l3gd20.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_can.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_gpio.h"/>
@@ -117,69 +117,69 @@
          <include file="..\..\..\cmsis_lib\include\stm32f30x_tim.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_usart.h"/>
       </source>
-      <source file="..\..\..\example\stm32f30x_it.c" lastModified="1581f3c09c8">
+      <source file="..\..\..\example\stm32f30x_it.c" lastModified="158210db6bc">
          <include file="..\..\..\example\stm32f30x_it.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f30x_i2c.c" lastModified="1581f3c098a">
+      <source file="..\..\..\cmsis_lib\source\stm32f30x_i2c.c" lastModified="158210db67d">
          <include file="..\..\..\cmsis_lib\include\stm32f30x_i2c.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f30x_spi.c" lastModified="1581f3c099b">
+      <source file="..\..\..\cmsis_lib\source\stm32f30x_spi.c" lastModified="158210db68d">
          <include file="..\..\..\cmsis_lib\include\stm32f30x_spi.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
       </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f30x_temp.c" lastModified="1581f3c0934">
+      <source file="..\..\..\cmsis_boot\system_stm32f30x_temp.c" lastModified="158210db638">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f30x_i2c.h" lastModified="1581f3c094c">
+      <source file="..\..\..\cmsis_lib\include\stm32f30x_i2c.h" lastModified="158210db648">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
       </source>
-      <source file="..\..\..\stdio\printf.c" lastModified="1581f3c11e5">
+      <source file="..\..\..\stdio\printf.c" lastModified="158210dbec1">
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f30x_spi.h" lastModified="1581f3c095d">
+      <source file="..\..\..\cmsis_lib\include\stm32f30x_spi.h" lastModified="158210db658">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
       </source>
-      <source file="..\..\..\syscalls\syscalls.c" lastModified="1581f3c19d9">
+      <source file="..\..\..\syscalls\syscalls.c" lastModified="158210dc6b1">
       </source>
-      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="1581f3c0d00">
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="158210dba01">
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f30x_exti.h" lastModified="1581f3c0941">
+      <source file="..\..\..\cmsis_lib\include\stm32f30x_exti.h" lastModified="158210db648">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
       </source>
-      <source file="..\..\..\metodar\SPI1_metodar.c" lastModified="1581f3c09f1">
+      <source file="..\..\..\metodar\SPI1_metodar.c" lastModified="158210db6e2">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_spi.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
          <include file="..\..\..\metodar\extern_dekl_globale_variablar.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f30x_gpio.h" lastModified="1581f3c0946">
+      <source file="..\..\..\cmsis_lib\include\stm32f30x_gpio.h" lastModified="158210db648">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
       </source>
-      <source file="..\..\..\cmsis_boot\system_stm32f30x.h" lastModified="1581f3c092c">
+      <source file="..\..\..\..\..\DMK2\C\metodar\dekl_globale_variablar.h" lastModified="1581f3c0a0a">
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f30x_misc.c" lastModified="1581f3c0990">
+      <source file="..\..\..\cmsis_lib\source\stm32f30x_misc.c" lastModified="158210db68d">
          <include file="..\..\..\cmsis_lib\include\stm32f30x_misc.h"/>
       </source>
-      <source file="..\..\..\metodar\extern_dekl_globale_variablar.h" lastModified="1581f3c0a0d">
+      <source file="..\..\..\cmsis_boot\system_stm32f30x.h" lastModified="158210db629">
       </source>
-      <source file="..\..\..\metodar\dekl_globale_variablar.h" lastModified="1581f3c0a0a">
+      <source file="..\..\..\metodar\extern_dekl_globale_variablar.h" lastModified="158210db6f1">
       </source>
-      <source file="..\..\..\metodar\UART_metodar.c" lastModified="1581f9ea428">
+      <source file="..\..\..\metodar\UART_metodar.c" lastModified="158210db6e2">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_usart.h"/>
          <include file="..\..\..\metodar\extern_dekl_globale_variablar.h"/>
       </source>
-      <source file="..\..\..\metodar\I2C_metodar.c" lastModified="1581f3c09e1">
+      <source file="..\..\..\metodar\I2C_metodar.c" lastModified="158210db6d2">
       </source>
-      <source file="..\..\..\stm32f3_discovery\stm32f3_discovery_lsm303dlhc.h" lastModified="1581f3c0a34">
+      <source file="..\..\..\stm32f3_discovery\stm32f3_discovery_lsm303dlhc.h" lastModified="158210db711">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_exti.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_syscfg.h"/>
       </source>
-      <source file="..\..\..\stm32f3_discovery\stm32f3_discovery_lsm303dlhc.c" lastModified="1581f3c0a2f">
+      <source file="..\..\..\stm32f3_discovery\stm32f3_discovery_lsm303dlhc.c" lastModified="158210db711">
          <include file="..\..\..\stm32f3_discovery\stm32f3_discovery_lsm303dlhc.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_can.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_gpio.h"/>
@@ -190,37 +190,31 @@
          <include file="..\..\..\cmsis_lib\include\stm32f30x_usart.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_exti.h"/>
       </source>
-      <source file="..\..\..\metodar\LINMOT_metodar.c" lastModified="1581f3c09e9">
+      <source file="..\..\..\metodar\LINMOT_metodar.c" lastModified="158210db6d2">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
          <include file="..\..\..\metodar\extern_dekl_globale_variablar.h"/>
       </source>
-      <source file="..\..\..\metodar\Instalering_av_perifermodul.h" lastModified="1581fd74d20">
-         <include file="..\..\..\cmsis_lib\include\stm32f30x_adc.h"/>
-         <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f30x_gpio.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f30x.S" lastModified="158210db629">
       </source>
-      <source file="..\..\..\cmsis_boot\startup\startup_stm32f30x.S" lastModified="1581f3c091e">
-      </source>
-      <source file="..\..\..\metodar\initialisering.c" lastModified="1581f78effa">
+      <source file="..\..\..\metodar\initialisering.c" lastModified="158210db6f1">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
          <include file="..\..\..\stm32f3_discovery\stm32f3_discovery_lsm303dlhc.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\source\stm32f30x_tim.c" lastModified="1581f3c09ae">
+      <source file="..\..\..\cmsis_lib\source\stm32f30x_tim.c" lastModified="158210db69d">
          <include file="..\..\..\cmsis_lib\include\stm32f30x_tim.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
       </source>
-      <source file="..\..\..\cmsis_lib\include\stm32f30x_tim.h" lastModified="1581f3c096c">
+      <source file="..\..\..\cmsis_lib\include\stm32f30x_tim.h" lastModified="158210db66e">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
       </source>
-      <source file="..\..\..\cmsis\core_cm4.h" lastModified="1581f3c0ceb">
+      <source file="..\..\..\cmsis\core_cm4.h" lastModified="158210db9f1">
          <include file="..\..\..\cmsis\core_cmInstr.h"/>
          <include file="..\..\..\cmsis\core_cmFunc.h"/>
          <include file="..\..\..\cmsis\core_cm4_simd.h"/>
       </source>
-      <source file="..\..\..\metodar\GPIO_metodar.c" lastModified="1581f3c09dc">
+      <source file="..\..\..\metodar\GPIO_metodar.c" lastModified="158210db6d2">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>

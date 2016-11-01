@@ -23,8 +23,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x28 ..\obj\GPIO_Toggle_Example.o
  .debug_ranges  0x00000000       0x18 ..\obj\GPIO_Toggle_Example.o
- .debug_line    0x00000000      0x2e0 ..\obj\GPIO_Toggle_Example.o
- .debug_str     0x00000000      0x35c ..\obj\GPIO_Toggle_Example.o
+ .debug_line    0x00000000      0x2ec ..\obj\GPIO_Toggle_Example.o
+ .debug_str     0x00000000      0x35f ..\obj\GPIO_Toggle_Example.o
  .comment       0x00000000       0x6f ..\obj\GPIO_Toggle_Example.o
  .debug_frame   0x00000000       0x30 ..\obj\GPIO_Toggle_Example.o
  .ARM.attributes
@@ -268,7 +268,7 @@ Discarded input sections
  .data          0x00000000        0x0 ..\obj\I2C_metodar.o
  .bss           0x00000000        0x0 ..\obj\I2C_metodar.o
  .debug_line    0x00000000        0x0 ..\obj\I2C_metodar.o
- .debug_str     0x00000000      0x10e ..\obj\I2C_metodar.o
+ .debug_str     0x00000000      0x111 ..\obj\I2C_metodar.o
  .comment       0x00000000       0x6f ..\obj\I2C_metodar.o
  .ARM.attributes
                 0x00000000       0x39 ..\obj\I2C_metodar.o
@@ -333,9 +333,9 @@ Discarded input sections
                 0x00000000        0x4 ..\obj\stm32f30x_gpio.o
  .text          0x00000000        0x0 ..\obj\main.o
  .text.ADC_oppstart
-                0x00000000       0xd8 ..\obj\main.o
+                0x00000000       0xe0 ..\obj\main.o
  .text.ADCVerdi
-                0x00000000       0x18 ..\obj\main.o
+                0x00000000       0x10 ..\obj\main.o
  .text          0x00000000        0x0 ..\obj\printf.o
  .data          0x00000000      0x430 ..\obj\printf.o
  .bss           0x00000000        0x0 ..\obj\printf.o
@@ -370,8 +370,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0xa0 ..\obj\printf.o
  .debug_ranges  0x00000000      0x120 ..\obj\printf.o
- .debug_line    0x00000000      0x480 ..\obj\printf.o
- .debug_str     0x00000000      0x705 ..\obj\printf.o
+ .debug_line    0x00000000      0x483 ..\obj\printf.o
+ .debug_str     0x00000000      0x70b ..\obj\printf.o
  .comment       0x00000000       0x6f ..\obj\printf.o
  .debug_frame   0x00000000      0x240 ..\obj\printf.o
  .ARM.attributes
@@ -562,8 +562,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x30 ..\obj\system_stm32f30x_temp.o
  .debug_ranges  0x00000000       0x20 ..\obj\system_stm32f30x_temp.o
- .debug_line    0x00000000      0x270 ..\obj\system_stm32f30x_temp.o
- .debug_str     0x00000000      0x368 ..\obj\system_stm32f30x_temp.o
+ .debug_line    0x00000000      0x276 ..\obj\system_stm32f30x_temp.o
+ .debug_str     0x00000000      0x36b ..\obj\system_stm32f30x_temp.o
  .comment       0x00000000       0x6f ..\obj\system_stm32f30x_temp.o
  .debug_frame   0x00000000       0x54 ..\obj\system_stm32f30x_temp.o
  .ARM.attributes
@@ -586,8 +586,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x60 ..\obj\syscalls.o
  .debug_ranges  0x00000000       0x50 ..\obj\syscalls.o
- .debug_line    0x00000000      0x20e ..\obj\syscalls.o
- .debug_str     0x00000000      0x3ce ..\obj\syscalls.o
+ .debug_line    0x00000000      0x211 ..\obj\syscalls.o
+ .debug_str     0x00000000      0x3d4 ..\obj\syscalls.o
  .comment       0x00000000       0x6f ..\obj\syscalls.o
  .debug_frame   0x00000000       0xa0 ..\obj\syscalls.o
  .ARM.attributes
@@ -611,8 +611,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x40 ..\obj\stm32f30x_misc.o
  .debug_ranges  0x00000000       0x30 ..\obj\stm32f30x_misc.o
- .debug_line    0x00000000      0x341 ..\obj\stm32f30x_misc.o
- .debug_str     0x00000000      0x42c ..\obj\stm32f30x_misc.o
+ .debug_line    0x00000000      0x34d ..\obj\stm32f30x_misc.o
+ .debug_str     0x00000000      0x42f ..\obj\stm32f30x_misc.o
  .comment       0x00000000       0x6f ..\obj\stm32f30x_misc.o
  .debug_frame   0x00000000       0x74 ..\obj\stm32f30x_misc.o
  .ARM.attributes
@@ -865,8 +865,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x70 ..\obj\stm32f3_discovery_l3gd20.o
  .debug_ranges  0x00000000       0x90 ..\obj\stm32f3_discovery_l3gd20.o
- .debug_line    0x00000000      0x4bc ..\obj\stm32f3_discovery_l3gd20.o
- .debug_str     0x00000000      0x874 ..\obj\stm32f3_discovery_l3gd20.o
+ .debug_line    0x00000000      0x4c8 ..\obj\stm32f3_discovery_l3gd20.o
+ .debug_str     0x00000000      0x877 ..\obj\stm32f3_discovery_l3gd20.o
  .comment       0x00000000       0x6f ..\obj\stm32f3_discovery_l3gd20.o
  .debug_frame   0x00000000      0x18c ..\obj\stm32f3_discovery_l3gd20.o
  .ARM.attributes
@@ -972,8 +972,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0xd8 ..\obj\stm32f30x_can.o
  .debug_ranges  0x00000000      0x138 ..\obj\stm32f30x_can.o
- .debug_line    0x00000000      0x6b8 ..\obj\stm32f30x_can.o
- .debug_str     0x00000000      0x7a9 ..\obj\stm32f30x_can.o
+ .debug_line    0x00000000      0x6c4 ..\obj\stm32f30x_can.o
+ .debug_str     0x00000000      0x7ac ..\obj\stm32f30x_can.o
  .comment       0x00000000       0x6f ..\obj\stm32f30x_can.o
  .debug_frame   0x00000000      0x20c ..\obj\stm32f30x_can.o
  .ARM.attributes
@@ -1000,8 +1000,8 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x48 ..\obj\stm32f3_discovery.o
  .debug_ranges  0x00000000       0x38 ..\obj\stm32f3_discovery.o
- .debug_line    0x00000000      0x3cd ..\obj\stm32f3_discovery.o
- .debug_str     0x00000000      0xb58 ..\obj\stm32f3_discovery.o
+ .debug_line    0x00000000      0x3d9 ..\obj\stm32f3_discovery.o
+ .debug_str     0x00000000      0xb5b ..\obj\stm32f3_discovery.o
  .comment       0x00000000       0x6f ..\obj\stm32f3_discovery.o
  .debug_frame   0x00000000       0xa0 ..\obj\stm32f3_discovery.o
  .ARM.attributes
@@ -1106,7 +1106,7 @@ Linker script and memory map
 
                 0x2000a000                _eram = 0x2000a000
 
-.text           0x08000000     0x18e4
+.text           0x08000000     0x18dc
  *(.isr_vector)
  .isr_vector    0x08000000      0x188 ..\obj\startup_stm32f30x.o
                 0x08000000                g_pfnVectors
@@ -1189,186 +1189,186 @@ Linker script and memory map
                 0x08000cec       0x2c ..\obj\stm32f30x_gpio.o
                 0x08000cec                GPIO_PinAFConfig
  .text.startup.main
-                0x08000d18      0x184 ..\obj\main.o
+                0x08000d18      0x17c ..\obj\main.o
                 0x08000d18                main
  .text.avbrot_oppstart
-                0x08000e9c        0x8 ..\obj\avbrots_metodar.o
-                0x08000e9c                avbrot_oppstart
+                0x08000e94        0x8 ..\obj\avbrots_metodar.o
+                0x08000e94                avbrot_oppstart
  .text.SysTick_oppstart
-                0x08000ea4       0x2c ..\obj\avbrots_metodar.o
-                0x08000ea4                SysTick_oppstart
+                0x08000e9c       0x2c ..\obj\avbrots_metodar.o
+                0x08000e9c                SysTick_oppstart
  .text.SysTick_Handler
-                0x08000ed0       0xc0 ..\obj\avbrots_metodar.o
-                0x08000ed0                SysTick_Handler
+                0x08000ec8       0xc0 ..\obj\avbrots_metodar.o
+                0x08000ec8                SysTick_Handler
  .text.SPI1_oppstart
-                0x08000f90       0xe0 ..\obj\SPI1_metodar.o
-                0x08000f90                SPI1_oppstart
+                0x08000f88       0xe0 ..\obj\SPI1_metodar.o
+                0x08000f88                SPI1_oppstart
  .text.gyro_oppstart
-                0x08001070       0x68 ..\obj\SPI1_metodar.o
-                0x08001070                gyro_oppstart
+                0x08001068       0x68 ..\obj\SPI1_metodar.o
+                0x08001068                gyro_oppstart
  .text.GPIO_oppstart
-                0x080010d8       0x80 ..\obj\GPIO_metodar.o
-                0x080010d8                GPIO_oppstart
+                0x080010d0       0x80 ..\obj\GPIO_metodar.o
+                0x080010d0                GPIO_oppstart
  .text.GPIO_sjekk_brytar
-                0x08001158       0x2c ..\obj\GPIO_metodar.o
-                0x08001158                GPIO_sjekk_brytar
+                0x08001150       0x2c ..\obj\GPIO_metodar.o
+                0x08001150                GPIO_sjekk_brytar
  .text.EXTI_Init
-                0x08001184      0x110 ..\obj\stm32f30x_exti.o
-                0x08001184                EXTI_Init
+                0x0800117c      0x110 ..\obj\stm32f30x_exti.o
+                0x0800117c                EXTI_Init
  .text.SPI_Init
-                0x08001294       0x8c ..\obj\stm32f30x_spi.o
-                0x08001294                SPI_Init
- .text.SPI_Cmd  0x08001320       0x1c ..\obj\stm32f30x_spi.o
-                0x08001320                SPI_Cmd
+                0x0800128c       0x8c ..\obj\stm32f30x_spi.o
+                0x0800128c                SPI_Init
+ .text.SPI_Cmd  0x08001318       0x1c ..\obj\stm32f30x_spi.o
+                0x08001318                SPI_Cmd
  .text.SPI_SendData8
-                0x0800133c        0x4 ..\obj\stm32f30x_spi.o
-                0x0800133c                SPI_SendData8
+                0x08001334        0x4 ..\obj\stm32f30x_spi.o
+                0x08001334                SPI_SendData8
  .text.SPI_ReceiveData8
-                0x08001340        0x4 ..\obj\stm32f30x_spi.o
-                0x08001340                SPI_ReceiveData8
+                0x08001338        0x4 ..\obj\stm32f30x_spi.o
+                0x08001338                SPI_ReceiveData8
  .text.I2C_Init
-                0x08001344       0x64 ..\obj\stm32f30x_i2c.o
-                0x08001344                I2C_Init
- .text.I2C_Cmd  0x080013a8       0x14 ..\obj\stm32f30x_i2c.o
-                0x080013a8                I2C_Cmd
+                0x0800133c       0x64 ..\obj\stm32f30x_i2c.o
+                0x0800133c                I2C_Init
+ .text.I2C_Cmd  0x080013a0       0x14 ..\obj\stm32f30x_i2c.o
+                0x080013a0                I2C_Cmd
  .text.I2C_TransferHandling
-                0x080013bc       0x24 ..\obj\stm32f30x_i2c.o
-                0x080013bc                I2C_TransferHandling
+                0x080013b4       0x24 ..\obj\stm32f30x_i2c.o
+                0x080013b4                I2C_TransferHandling
  .text.I2C_SendData
-                0x080013e0        0x4 ..\obj\stm32f30x_i2c.o
-                0x080013e0                I2C_SendData
+                0x080013d8        0x4 ..\obj\stm32f30x_i2c.o
+                0x080013d8                I2C_SendData
  .text.I2C_ReceiveData
-                0x080013e4        0x8 ..\obj\stm32f30x_i2c.o
-                0x080013e4                I2C_ReceiveData
+                0x080013dc        0x8 ..\obj\stm32f30x_i2c.o
+                0x080013dc                I2C_ReceiveData
  .text.I2C_GetFlagStatus
-                0x080013ec        0xc ..\obj\stm32f30x_i2c.o
-                0x080013ec                I2C_GetFlagStatus
+                0x080013e4        0xc ..\obj\stm32f30x_i2c.o
+                0x080013e4                I2C_GetFlagStatus
  .text.I2C_ClearFlag
-                0x080013f8        0x4 ..\obj\stm32f30x_i2c.o
-                0x080013f8                I2C_ClearFlag
+                0x080013f0        0x4 ..\obj\stm32f30x_i2c.o
+                0x080013f0                I2C_ClearFlag
  .text.maskinvare_init
-                0x080013fc       0x34 ..\obj\initialisering.o
-                0x080013fc                maskinvare_init
+                0x080013f4       0x34 ..\obj\initialisering.o
+                0x080013f4                maskinvare_init
  .text.aks_oppstart
-                0x08001430       0x4c ..\obj\LSM303DLHC_metodar.o
-                0x08001430                aks_oppstart
+                0x08001428       0x4c ..\obj\LSM303DLHC_metodar.o
+                0x08001428                aks_oppstart
  .text.TIM_TimeBaseInit
-                0x0800147c       0xa8 ..\obj\stm32f30x_tim.o
-                0x0800147c                TIM_TimeBaseInit
- .text.TIM_Cmd  0x08001524       0x1c ..\obj\stm32f30x_tim.o
-                0x08001524                TIM_Cmd
+                0x08001474       0xa8 ..\obj\stm32f30x_tim.o
+                0x08001474                TIM_TimeBaseInit
+ .text.TIM_Cmd  0x0800151c       0x1c ..\obj\stm32f30x_tim.o
+                0x0800151c                TIM_Cmd
  .text.TIM_OC2Init
-                0x08001540       0x74 ..\obj\stm32f30x_tim.o
-                0x08001540                TIM_OC2Init
+                0x08001538       0x74 ..\obj\stm32f30x_tim.o
+                0x08001538                TIM_OC2Init
  .text.Reset_Handler
-                0x080015b4       0x44 ..\obj\startup_stm32f30x.o
-                0x080015b4                Reset_Handler
+                0x080015ac       0x44 ..\obj\startup_stm32f30x.o
+                0x080015ac                Reset_Handler
  .text.Default_Handler
-                0x080015f8        0x2 ..\obj\startup_stm32f30x.o
-                0x080015f8                RTC_Alarm_IRQHandler
-                0x080015f8                TIM8_TRG_COM_IRQHandler
-                0x080015f8                TIM8_CC_IRQHandler
-                0x080015f8                TIM1_CC_IRQHandler
-                0x080015f8                USB_HP_IRQHandler
-                0x080015f8                PVD_IRQHandler
-                0x080015f8                EXTI3_IRQHandler
-                0x080015f8                EXTI0_IRQHandler
-                0x080015f8                I2C2_EV_IRQHandler
-                0x080015f8                FPU_IRQHandler
-                0x080015f8                EXTI2_TS_IRQHandler
-                0x080015f8                TIM1_UP_TIM16_IRQHandler
-                0x080015f8                ADC1_2_IRQHandler
-                0x080015f8                SPI1_IRQHandler
-                0x080015f8                TIM6_DAC_IRQHandler
-                0x080015f8                TIM8_UP_IRQHandler
-                0x080015f8                DMA2_Channel2_IRQHandler
-                0x080015f8                DMA1_Channel4_IRQHandler
-                0x080015f8                USART3_IRQHandler
-                0x080015f8                DMA1_Channel7_IRQHandler
-                0x080015f8                CAN1_RX1_IRQHandler
-                0x080015f8                UART5_IRQHandler
-                0x080015f8                ADC3_IRQHandler
-                0x080015f8                TIM4_IRQHandler
-                0x080015f8                DMA2_Channel1_IRQHandler
-                0x080015f8                I2C1_EV_IRQHandler
-                0x080015f8                DMA1_Channel6_IRQHandler
-                0x080015f8                UART4_IRQHandler
-                0x080015f8                DMA2_Channel4_IRQHandler
-                0x080015f8                TIM3_IRQHandler
-                0x080015f8                RCC_IRQHandler
-                0x080015f8                DMA1_Channel1_IRQHandler
-                0x080015f8                Default_Handler
-                0x080015f8                USBWakeUp_RMP_IRQHandler
-                0x080015f8                EXTI15_10_IRQHandler
-                0x080015f8                TIM7_IRQHandler
-                0x080015f8                EXTI9_5_IRQHandler
-                0x080015f8                TAMPER_STAMP_IRQHandler
-                0x080015f8                RTC_WKUP_IRQHandler
-                0x080015f8                SPI2_IRQHandler
-                0x080015f8                DMA2_Channel5_IRQHandler
-                0x080015f8                DMA1_Channel5_IRQHandler
-                0x080015f8                USB_LP_IRQHandler
-                0x080015f8                EXTI4_IRQHandler
-                0x080015f8                USB_LP_CAN1_RX0_IRQHandler
-                0x080015f8                TIM1_TRG_COM_TIM17_IRQHandler
-                0x080015f8                USB_HP_CAN1_TX_IRQHandler
-                0x080015f8                DMA1_Channel3_IRQHandler
-                0x080015f8                ADC4_IRQHandler
-                0x080015f8                WWDG_IRQHandler
-                0x080015f8                TIM2_IRQHandler
-                0x080015f8                COMP7_IRQHandler
-                0x080015f8                COMP1_2_3_IRQHandler
-                0x080015f8                EXTI1_IRQHandler
-                0x080015f8                USART2_IRQHandler
-                0x080015f8                COMP4_5_6_IRQHandler
-                0x080015f8                I2C2_ER_IRQHandler
-                0x080015f8                DMA1_Channel2_IRQHandler
-                0x080015f8                TIM8_BRK_IRQHandler
-                0x080015f8                CAN1_SCE_IRQHandler
-                0x080015f8                FLASH_IRQHandler
-                0x080015f8                USART1_IRQHandler
-                0x080015f8                SPI3_IRQHandler
-                0x080015f8                I2C1_ER_IRQHandler
-                0x080015f8                USBWakeUp_IRQHandler
-                0x080015f8                DMA2_Channel3_IRQHandler
-                0x080015f8                TIM1_BRK_TIM15_IRQHandler
- *fill*         0x080015fa        0x2 
+                0x080015f0        0x2 ..\obj\startup_stm32f30x.o
+                0x080015f0                RTC_Alarm_IRQHandler
+                0x080015f0                TIM8_TRG_COM_IRQHandler
+                0x080015f0                TIM8_CC_IRQHandler
+                0x080015f0                TIM1_CC_IRQHandler
+                0x080015f0                USB_HP_IRQHandler
+                0x080015f0                PVD_IRQHandler
+                0x080015f0                EXTI3_IRQHandler
+                0x080015f0                EXTI0_IRQHandler
+                0x080015f0                I2C2_EV_IRQHandler
+                0x080015f0                FPU_IRQHandler
+                0x080015f0                EXTI2_TS_IRQHandler
+                0x080015f0                TIM1_UP_TIM16_IRQHandler
+                0x080015f0                ADC1_2_IRQHandler
+                0x080015f0                SPI1_IRQHandler
+                0x080015f0                TIM6_DAC_IRQHandler
+                0x080015f0                TIM8_UP_IRQHandler
+                0x080015f0                DMA2_Channel2_IRQHandler
+                0x080015f0                DMA1_Channel4_IRQHandler
+                0x080015f0                USART3_IRQHandler
+                0x080015f0                DMA1_Channel7_IRQHandler
+                0x080015f0                CAN1_RX1_IRQHandler
+                0x080015f0                UART5_IRQHandler
+                0x080015f0                ADC3_IRQHandler
+                0x080015f0                TIM4_IRQHandler
+                0x080015f0                DMA2_Channel1_IRQHandler
+                0x080015f0                I2C1_EV_IRQHandler
+                0x080015f0                DMA1_Channel6_IRQHandler
+                0x080015f0                UART4_IRQHandler
+                0x080015f0                DMA2_Channel4_IRQHandler
+                0x080015f0                TIM3_IRQHandler
+                0x080015f0                RCC_IRQHandler
+                0x080015f0                DMA1_Channel1_IRQHandler
+                0x080015f0                Default_Handler
+                0x080015f0                USBWakeUp_RMP_IRQHandler
+                0x080015f0                EXTI15_10_IRQHandler
+                0x080015f0                TIM7_IRQHandler
+                0x080015f0                EXTI9_5_IRQHandler
+                0x080015f0                TAMPER_STAMP_IRQHandler
+                0x080015f0                RTC_WKUP_IRQHandler
+                0x080015f0                SPI2_IRQHandler
+                0x080015f0                DMA2_Channel5_IRQHandler
+                0x080015f0                DMA1_Channel5_IRQHandler
+                0x080015f0                USB_LP_IRQHandler
+                0x080015f0                EXTI4_IRQHandler
+                0x080015f0                USB_LP_CAN1_RX0_IRQHandler
+                0x080015f0                TIM1_TRG_COM_TIM17_IRQHandler
+                0x080015f0                USB_HP_CAN1_TX_IRQHandler
+                0x080015f0                DMA1_Channel3_IRQHandler
+                0x080015f0                ADC4_IRQHandler
+                0x080015f0                WWDG_IRQHandler
+                0x080015f0                TIM2_IRQHandler
+                0x080015f0                COMP7_IRQHandler
+                0x080015f0                COMP1_2_3_IRQHandler
+                0x080015f0                EXTI1_IRQHandler
+                0x080015f0                USART2_IRQHandler
+                0x080015f0                COMP4_5_6_IRQHandler
+                0x080015f0                I2C2_ER_IRQHandler
+                0x080015f0                DMA1_Channel2_IRQHandler
+                0x080015f0                TIM8_BRK_IRQHandler
+                0x080015f0                CAN1_SCE_IRQHandler
+                0x080015f0                FLASH_IRQHandler
+                0x080015f0                USART1_IRQHandler
+                0x080015f0                SPI3_IRQHandler
+                0x080015f0                I2C1_ER_IRQHandler
+                0x080015f0                USBWakeUp_IRQHandler
+                0x080015f0                DMA2_Channel3_IRQHandler
+                0x080015f0                TIM1_BRK_TIM15_IRQHandler
+ *fill*         0x080015f2        0x2 
  .text.SYSCFG_EXTILineConfig
-                0x080015fc       0x30 ..\obj\stm32f30x_syscfg.o
-                0x080015fc                SYSCFG_EXTILineConfig
+                0x080015f4       0x30 ..\obj\stm32f30x_syscfg.o
+                0x080015f4                SYSCFG_EXTILineConfig
  .text.SPI2_oppstart
-                0x0800162c       0xd4 ..\obj\SPI2_metodar.o
-                0x0800162c                SPI2_oppstart
+                0x08001624       0xd4 ..\obj\SPI2_metodar.o
+                0x08001624                SPI2_oppstart
  .text.Exp_click_sokkel1_sett_retningAB
-                0x08001700       0x60 ..\obj\SPI2_metodar.o
-                0x08001700                Exp_click_sokkel1_sett_retningAB
+                0x080016f8       0x60 ..\obj\SPI2_metodar.o
+                0x080016f8                Exp_click_sokkel1_sett_retningAB
  .text.Exp_click_sokkel1_oppstart
-                0x08001760        0x8 ..\obj\SPI2_metodar.o
-                0x08001760                Exp_click_sokkel1_oppstart
+                0x08001758        0x8 ..\obj\SPI2_metodar.o
+                0x08001758                Exp_click_sokkel1_oppstart
  .text.LinMot_oppstart
-                0x08001768       0x3c ..\obj\LINMOT_metodar.o
-                0x08001768                LinMot_oppstart
+                0x08001760       0x3c ..\obj\LINMOT_metodar.o
+                0x08001760                LinMot_oppstart
  .text.USART_Init
-                0x080017a4       0xbc ..\obj\stm32f30x_usart.o
-                0x080017a4                USART_Init
+                0x0800179c       0xbc ..\obj\stm32f30x_usart.o
+                0x0800179c                USART_Init
  .text.USART_ClockInit
-                0x08001860       0x20 ..\obj\stm32f30x_usart.o
-                0x08001860                USART_ClockInit
+                0x08001858       0x20 ..\obj\stm32f30x_usart.o
+                0x08001858                USART_ClockInit
  .text.USART_ClockStructInit
-                0x08001880        0xc ..\obj\stm32f30x_usart.o
-                0x08001880                USART_ClockStructInit
+                0x08001878        0xc ..\obj\stm32f30x_usart.o
+                0x08001878                USART_ClockStructInit
  .text.USART_Cmd
-                0x0800188c       0x14 ..\obj\stm32f30x_usart.o
-                0x0800188c                USART_Cmd
+                0x08001884       0x14 ..\obj\stm32f30x_usart.o
+                0x08001884                USART_Cmd
  .text.USART_SendData
-                0x080018a0        0x8 ..\obj\stm32f30x_usart.o
-                0x080018a0                USART_SendData
+                0x08001898        0x8 ..\obj\stm32f30x_usart.o
+                0x08001898                USART_SendData
  .text.USART_ReceiveData
-                0x080018a8        0x8 ..\obj\stm32f30x_usart.o
-                0x080018a8                USART_ReceiveData
+                0x080018a0        0x8 ..\obj\stm32f30x_usart.o
+                0x080018a0                USART_ReceiveData
  .text.USART_GetFlagStatus
-                0x080018b0        0xc ..\obj\stm32f30x_usart.o
-                0x080018b0                USART_GetFlagStatus
+                0x080018a8        0xc ..\obj\stm32f30x_usart.o
+                0x080018a8                USART_GetFlagStatus
  *(.init)
  *(.fini)
  *crtbegin.o(.ctors)
@@ -1383,39 +1383,39 @@ Linker script and memory map
  *(.dtors)
  *(.rodata*)
  .rodata.str1.4
-                0x080018bc       0x28 ..\obj\UART_metodar.o
+                0x080018b4       0x28 ..\obj\UART_metodar.o
                                  0x26 (size before relaxing)
  *(.eh_fram e*)
 
-.glue_7         0x080018e4        0x0
- .glue_7        0x080018e4        0x0 linker stubs
+.glue_7         0x080018dc        0x0
+ .glue_7        0x080018dc        0x0 linker stubs
 
-.glue_7t        0x080018e4        0x0
- .glue_7t       0x080018e4        0x0 linker stubs
+.glue_7t        0x080018dc        0x0
+ .glue_7t       0x080018dc        0x0 linker stubs
 
-.vfp11_veneer   0x080018e4        0x0
- .vfp11_veneer  0x080018e4        0x0 linker stubs
+.vfp11_veneer   0x080018dc        0x0
+ .vfp11_veneer  0x080018dc        0x0 linker stubs
 
-.v4_bx          0x080018e4        0x0
- .v4_bx         0x080018e4        0x0 linker stubs
+.v4_bx          0x080018dc        0x0
+ .v4_bx         0x080018dc        0x0 linker stubs
 
-.iplt           0x080018e4        0x0
- .iplt          0x080018e4        0x0 ..\obj\GPIO_Toggle_Example.o
+.iplt           0x080018dc        0x0
+ .iplt          0x080018dc        0x0 ..\obj\GPIO_Toggle_Example.o
 
-.rel.dyn        0x080018e4        0x0
- .rel.iplt      0x080018e4        0x0 ..\obj\GPIO_Toggle_Example.o
+.rel.dyn        0x080018dc        0x0
+ .rel.iplt      0x080018dc        0x0 ..\obj\GPIO_Toggle_Example.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x080018e4                __exidx_start = .
+                0x080018dc                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x080018e4                __exidx_end = .
-                0x080018e4                __etext = .
-                0x080018e4                _sidata = __etext
+                0x080018dc                __exidx_end = .
+                0x080018dc                __etext = .
+                0x080018dc                _sidata = __etext
 
-.data           0x20000000       0x58 load address 0x080018e4
+.data           0x20000000       0x58 load address 0x080018dc
                 0x20000000                __data_start__ = .
                 0x20000000                _sdata = __data_start__
  *(vtable)
@@ -1456,10 +1456,10 @@ Linker script and memory map
                 0x20000058                __data_end__ = .
                 0x20000058                _edata = __data_end__
 
-.igot.plt       0x20000058        0x0 load address 0x0800193c
+.igot.plt       0x20000058        0x0 load address 0x08001934
  .igot.plt      0x20000058        0x0 ..\obj\GPIO_Toggle_Example.o
 
-.bss            0x20000058       0x44 load address 0x0800193c
+.bss            0x20000058       0x44 load address 0x08001934
                 0x20000058                . = ALIGN (0x4)
                 0x20000058                __bss_start__ = .
                 0x20000058                _sbss = __bss_start__
@@ -1513,7 +1513,7 @@ Linker script and memory map
  *(.heap*)
                 0x2000009c                __HeapLimit = .
 
-.co_stack       0x2000009c        0x4 load address 0x08001980
+.co_stack       0x2000009c        0x4 load address 0x08001978
                 0x200000a0                . = ALIGN (0x8)
  *fill*         0x2000009c        0x4 
  *(.co_stack .co_stack.*)
@@ -1560,7 +1560,7 @@ LOAD c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm
 END GROUP
 OUTPUT(aks_xyz_loggar_stm32f3disc.elf elf32-littlearm)
 
-.debug_info     0x00000000     0xdb48
+.debug_info     0x00000000     0xdb6e
  .debug_info    0x00000000      0xb78 ..\obj\stm32f30x_rcc.o
  .debug_info    0x00000b78     0x11bf ..\obj\stm32f3_discovery_lsm303dlhc.o
  .debug_info    0x00001d37      0x722 ..\obj\TIM_metodar.o
@@ -1569,21 +1569,21 @@ OUTPUT(aks_xyz_loggar_stm32f3disc.elf elf32-littlearm)
  .debug_info    0x00003cc2      0xe71 ..\obj\UART_metodar.o
  .debug_info    0x00004b33       0xf1 ..\obj\stm32f30x_it.o
  .debug_info    0x00004c24      0x752 ..\obj\stm32f30x_gpio.o
- .debug_info    0x00005376      0xd7b ..\obj\main.o
- .debug_info    0x000060f1      0x80c ..\obj\avbrots_metodar.o
- .debug_info    0x000068fd      0x6e5 ..\obj\SPI1_metodar.o
- .debug_info    0x00006fe2      0x43d ..\obj\GPIO_metodar.o
- .debug_info    0x0000741f      0x3a6 ..\obj\stm32f30x_exti.o
- .debug_info    0x000077c5      0xc48 ..\obj\stm32f30x_spi.o
- .debug_info    0x0000840d      0xbd7 ..\obj\stm32f30x_i2c.o
- .debug_info    0x00008fe4      0x188 ..\obj\initialisering.o
- .debug_info    0x0000916c      0x1c6 ..\obj\LSM303DLHC_metodar.o
- .debug_info    0x00009332     0x28f1 ..\obj\stm32f30x_tim.o
- .debug_info    0x0000bc23      0x122 ..\obj\startup_stm32f30x.o
- .debug_info    0x0000bd45      0x318 ..\obj\stm32f30x_syscfg.o
- .debug_info    0x0000c05d      0x7c5 ..\obj\SPI2_metodar.o
- .debug_info    0x0000c822      0x33f ..\obj\LINMOT_metodar.o
- .debug_info    0x0000cb61      0xfe7 ..\obj\stm32f30x_usart.o
+ .debug_info    0x00005376      0xd9b ..\obj\main.o
+ .debug_info    0x00006111      0x80c ..\obj\avbrots_metodar.o
+ .debug_info    0x0000691d      0x6e5 ..\obj\SPI1_metodar.o
+ .debug_info    0x00007002      0x43d ..\obj\GPIO_metodar.o
+ .debug_info    0x0000743f      0x3a6 ..\obj\stm32f30x_exti.o
+ .debug_info    0x000077e5      0xc48 ..\obj\stm32f30x_spi.o
+ .debug_info    0x0000842d      0xbd7 ..\obj\stm32f30x_i2c.o
+ .debug_info    0x00009004      0x188 ..\obj\initialisering.o
+ .debug_info    0x0000918c      0x1c6 ..\obj\LSM303DLHC_metodar.o
+ .debug_info    0x00009352     0x28f1 ..\obj\stm32f30x_tim.o
+ .debug_info    0x0000bc43      0x128 ..\obj\startup_stm32f30x.o
+ .debug_info    0x0000bd6b      0x318 ..\obj\stm32f30x_syscfg.o
+ .debug_info    0x0000c083      0x7c5 ..\obj\SPI2_metodar.o
+ .debug_info    0x0000c848      0x33f ..\obj\LINMOT_metodar.o
+ .debug_info    0x0000cb87      0xfe7 ..\obj\stm32f30x_usart.o
 
 .debug_abbrev   0x00000000     0x2471
  .debug_abbrev  0x00000000      0x297 ..\obj\stm32f30x_rcc.o
@@ -1610,7 +1610,7 @@ OUTPUT(aks_xyz_loggar_stm32f3disc.elf elf32-littlearm)
  .debug_abbrev  0x00002159      0x150 ..\obj\LINMOT_metodar.o
  .debug_abbrev  0x000022a9      0x1c8 ..\obj\stm32f30x_usart.o
 
-.debug_loc      0x00000000     0x6977
+.debug_loc      0x00000000     0x697e
  .debug_loc     0x00000000      0xbbb ..\obj\stm32f30x_rcc.o
  .debug_loc     0x00000bbb      0x387 ..\obj\stm32f3_discovery_lsm303dlhc.o
  .debug_loc     0x00000f42       0x2d ..\obj\TIM_metodar.o
@@ -1618,16 +1618,16 @@ OUTPUT(aks_xyz_loggar_stm32f3disc.elf elf32-littlearm)
  .debug_loc     0x00001078      0xdd4 ..\obj\stm32f30x_adc.o
  .debug_loc     0x00001e4c      0x600 ..\obj\UART_metodar.o
  .debug_loc     0x0000244c      0x351 ..\obj\stm32f30x_gpio.o
- .debug_loc     0x0000279d       0xda ..\obj\main.o
- .debug_loc     0x00002877       0x74 ..\obj\avbrots_metodar.o
- .debug_loc     0x000028eb       0x2c ..\obj\SPI1_metodar.o
- .debug_loc     0x00002917      0x28e ..\obj\stm32f30x_exti.o
- .debug_loc     0x00002ba5      0x6a4 ..\obj\stm32f30x_spi.o
- .debug_loc     0x00003249      0x5ab ..\obj\stm32f30x_i2c.o
- .debug_loc     0x000037f4     0x25d8 ..\obj\stm32f30x_tim.o
- .debug_loc     0x00005dcc      0x1af ..\obj\stm32f30x_syscfg.o
- .debug_loc     0x00005f7b       0xb0 ..\obj\SPI2_metodar.o
- .debug_loc     0x0000602b      0x94c ..\obj\stm32f30x_usart.o
+ .debug_loc     0x0000279d       0xe1 ..\obj\main.o
+ .debug_loc     0x0000287e       0x74 ..\obj\avbrots_metodar.o
+ .debug_loc     0x000028f2       0x2c ..\obj\SPI1_metodar.o
+ .debug_loc     0x0000291e      0x28e ..\obj\stm32f30x_exti.o
+ .debug_loc     0x00002bac      0x6a4 ..\obj\stm32f30x_spi.o
+ .debug_loc     0x00003250      0x5ab ..\obj\stm32f30x_i2c.o
+ .debug_loc     0x000037fb     0x25d8 ..\obj\stm32f30x_tim.o
+ .debug_loc     0x00005dd3      0x1af ..\obj\stm32f30x_syscfg.o
+ .debug_loc     0x00005f82       0xb0 ..\obj\SPI2_metodar.o
+ .debug_loc     0x00006032      0x94c ..\obj\stm32f30x_usart.o
 
 .debug_aranges  0x00000000      0xf88
  .debug_aranges
@@ -1702,76 +1702,76 @@ OUTPUT(aks_xyz_loggar_stm32f3disc.elf elf32-littlearm)
  .debug_ranges  0x00000d78       0x18 ..\obj\LINMOT_metodar.o
  .debug_ranges  0x00000d90      0x190 ..\obj\stm32f30x_usart.o
 
-.debug_line     0x00000000     0x6b14
- .debug_line    0x00000000      0x6d0 ..\obj\stm32f30x_rcc.o
- .debug_line    0x000006d0      0x57b ..\obj\stm32f3_discovery_lsm303dlhc.o
- .debug_line    0x00000c4b      0x359 ..\obj\TIM_metodar.o
- .debug_line    0x00000fa4      0x2ae ..\obj\system_stm32f30x.o
- .debug_line    0x00001252      0x8c2 ..\obj\stm32f30x_adc.o
- .debug_line    0x00001b14      0x542 ..\obj\UART_metodar.o
- .debug_line    0x00002056      0x218 ..\obj\stm32f30x_it.o
- .debug_line    0x0000226e      0x443 ..\obj\stm32f30x_gpio.o
- .debug_line    0x000026b1      0x4ec ..\obj\main.o
- .debug_line    0x00002b9d      0x2f5 ..\obj\avbrots_metodar.o
- .debug_line    0x00002e92      0x39b ..\obj\SPI1_metodar.o
- .debug_line    0x0000322d      0x3ac ..\obj\GPIO_metodar.o
- .debug_line    0x000035d9      0x393 ..\obj\stm32f30x_exti.o
- .debug_line    0x0000396c      0x618 ..\obj\stm32f30x_spi.o
- .debug_line    0x00003f84      0x661 ..\obj\stm32f30x_i2c.o
- .debug_line    0x000045e5      0x1e5 ..\obj\initialisering.o
- .debug_line    0x000047ca      0x284 ..\obj\LSM303DLHC_metodar.o
- .debug_line    0x00004a4e      0xea1 ..\obj\stm32f30x_tim.o
- .debug_line    0x000058ef       0xdb ..\obj\startup_stm32f30x.o
- .debug_line    0x000059ca      0x30d ..\obj\stm32f30x_syscfg.o
- .debug_line    0x00005cd7      0x3c9 ..\obj\SPI2_metodar.o
- .debug_line    0x000060a0      0x2ff ..\obj\LINMOT_metodar.o
- .debug_line    0x0000639f      0x775 ..\obj\stm32f30x_usart.o
+.debug_line     0x00000000     0x6c01
+ .debug_line    0x00000000      0x6dc ..\obj\stm32f30x_rcc.o
+ .debug_line    0x000006dc      0x587 ..\obj\stm32f3_discovery_lsm303dlhc.o
+ .debug_line    0x00000c63      0x365 ..\obj\TIM_metodar.o
+ .debug_line    0x00000fc8      0x2b7 ..\obj\system_stm32f30x.o
+ .debug_line    0x0000127f      0x8ce ..\obj\stm32f30x_adc.o
+ .debug_line    0x00001b4d      0x54e ..\obj\UART_metodar.o
+ .debug_line    0x0000209b      0x21e ..\obj\stm32f30x_it.o
+ .debug_line    0x000022b9      0x44f ..\obj\stm32f30x_gpio.o
+ .debug_line    0x00002708      0x4f2 ..\obj\main.o
+ .debug_line    0x00002bfa      0x2fe ..\obj\avbrots_metodar.o
+ .debug_line    0x00002ef8      0x3a7 ..\obj\SPI1_metodar.o
+ .debug_line    0x0000329f      0x3b8 ..\obj\GPIO_metodar.o
+ .debug_line    0x00003657      0x39f ..\obj\stm32f30x_exti.o
+ .debug_line    0x000039f6      0x624 ..\obj\stm32f30x_spi.o
+ .debug_line    0x0000401a      0x66d ..\obj\stm32f30x_i2c.o
+ .debug_line    0x00004687      0x1eb ..\obj\initialisering.o
+ .debug_line    0x00004872      0x28d ..\obj\LSM303DLHC_metodar.o
+ .debug_line    0x00004aff      0xead ..\obj\stm32f30x_tim.o
+ .debug_line    0x000059ac       0xde ..\obj\startup_stm32f30x.o
+ .debug_line    0x00005a8a      0x316 ..\obj\stm32f30x_syscfg.o
+ .debug_line    0x00005da0      0x3d5 ..\obj\SPI2_metodar.o
+ .debug_line    0x00006175      0x30b ..\obj\LINMOT_metodar.o
+ .debug_line    0x00006480      0x781 ..\obj\stm32f30x_usart.o
 
-.debug_str      0x00000000     0x4daf
- .debug_str     0x00000000      0x7bc ..\obj\stm32f30x_rcc.o
-                                0x852 (size before relaxing)
- .debug_str     0x000007bc      0x875 ..\obj\stm32f3_discovery_lsm303dlhc.o
-                                0xa5c (size before relaxing)
- .debug_str     0x00001031      0x2a8 ..\obj\TIM_metodar.o
-                                0x625 (size before relaxing)
- .debug_str     0x000012d9      0x129 ..\obj\system_stm32f30x.o
-                                0x35d (size before relaxing)
- .debug_str     0x00001402      0x9cd ..\obj\stm32f30x_adc.o
-                                0xc04 (size before relaxing)
- .debug_str     0x00001dcf      0x3f4 ..\obj\UART_metodar.o
-                                0x7c0 (size before relaxing)
- .debug_str     0x000021c3       0xc7 ..\obj\stm32f30x_it.o
-                                0x212 (size before relaxing)
- .debug_str     0x0000228a      0x1a3 ..\obj\stm32f30x_gpio.o
-                                0x513 (size before relaxing)
- .debug_str     0x0000242d      0x2f3 ..\obj\main.o
-                                0x9fa (size before relaxing)
- .debug_str     0x00002720      0x55e ..\obj\avbrots_metodar.o
-                                0x861 (size before relaxing)
- .debug_str     0x00002c7e      0x1aa ..\obj\SPI1_metodar.o
-                                0x57b (size before relaxing)
- .debug_str     0x00002e28       0xad ..\obj\GPIO_metodar.o
-                                0x4c0 (size before relaxing)
- .debug_str     0x00002ed5      0x142 ..\obj\stm32f30x_exti.o
-                                0x3cf (size before relaxing)
- .debug_str     0x00003017      0x3cd ..\obj\stm32f30x_spi.o
-                                0x865 (size before relaxing)
- .debug_str     0x000033e4      0x394 ..\obj\stm32f30x_i2c.o
-                                0x6a7 (size before relaxing)
- .debug_str     0x00003778       0xb8 ..\obj\initialisering.o
-                                0x27b (size before relaxing)
- .debug_str     0x00003830       0x83 ..\obj\LSM303DLHC_metodar.o
-                                0x2ec (size before relaxing)
- .debug_str     0x000038b3      0xbc6 ..\obj\stm32f30x_tim.o
-                                0xfe8 (size before relaxing)
- .debug_str     0x00004479      0x1df ..\obj\stm32f30x_syscfg.o
-                                0x3af (size before relaxing)
- .debug_str     0x00004658       0xf4 ..\obj\SPI2_metodar.o
-                                0x5e1 (size before relaxing)
- .debug_str     0x0000474c       0x86 ..\obj\LINMOT_metodar.o
-                                0x3e6 (size before relaxing)
- .debug_str     0x000047d2      0x5dd ..\obj\stm32f30x_usart.o
-                                0xa9d (size before relaxing)
+.debug_str      0x00000000     0x4de5
+ .debug_str     0x00000000      0x7bf ..\obj\stm32f30x_rcc.o
+                                0x855 (size before relaxing)
+ .debug_str     0x000007bf      0x878 ..\obj\stm32f3_discovery_lsm303dlhc.o
+                                0xa5f (size before relaxing)
+ .debug_str     0x00001037      0x2ab ..\obj\TIM_metodar.o
+                                0x628 (size before relaxing)
+ .debug_str     0x000012e2      0x12c ..\obj\system_stm32f30x.o
+                                0x360 (size before relaxing)
+ .debug_str     0x0000140e      0x9d0 ..\obj\stm32f30x_adc.o
+                                0xc07 (size before relaxing)
+ .debug_str     0x00001dde      0x3f7 ..\obj\UART_metodar.o
+                                0x7c3 (size before relaxing)
+ .debug_str     0x000021d5       0xca ..\obj\stm32f30x_it.o
+                                0x215 (size before relaxing)
+ .debug_str     0x0000229f      0x1a6 ..\obj\stm32f30x_gpio.o
+                                0x516 (size before relaxing)
+ .debug_str     0x00002445      0x2ea ..\obj\main.o
+                                0x9f7 (size before relaxing)
+ .debug_str     0x0000272f      0x561 ..\obj\avbrots_metodar.o
+                                0x864 (size before relaxing)
+ .debug_str     0x00002c90      0x1ad ..\obj\SPI1_metodar.o
+                                0x57e (size before relaxing)
+ .debug_str     0x00002e3d       0xb0 ..\obj\GPIO_metodar.o
+                                0x4c3 (size before relaxing)
+ .debug_str     0x00002eed      0x145 ..\obj\stm32f30x_exti.o
+                                0x3d2 (size before relaxing)
+ .debug_str     0x00003032      0x3d0 ..\obj\stm32f30x_spi.o
+                                0x868 (size before relaxing)
+ .debug_str     0x00003402      0x397 ..\obj\stm32f30x_i2c.o
+                                0x6aa (size before relaxing)
+ .debug_str     0x00003799       0xbb ..\obj\initialisering.o
+                                0x27e (size before relaxing)
+ .debug_str     0x00003854       0x86 ..\obj\LSM303DLHC_metodar.o
+                                0x2ef (size before relaxing)
+ .debug_str     0x000038da      0xbc9 ..\obj\stm32f30x_tim.o
+                                0xfeb (size before relaxing)
+ .debug_str     0x000044a3      0x1e2 ..\obj\stm32f30x_syscfg.o
+                                0x3b2 (size before relaxing)
+ .debug_str     0x00004685       0xf7 ..\obj\SPI2_metodar.o
+                                0x5e4 (size before relaxing)
+ .debug_str     0x0000477c       0x89 ..\obj\LINMOT_metodar.o
+                                0x3e9 (size before relaxing)
+ .debug_str     0x00004805      0x5e0 ..\obj\stm32f30x_usart.o
+                                0xaa0 (size before relaxing)
 
 .comment        0x00000000       0x6e
  .comment       0x00000000       0x6e ..\obj\stm32f30x_rcc.o

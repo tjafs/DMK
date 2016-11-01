@@ -107,8 +107,8 @@ int main(void)  {
 				a_zf_k_1 = a_zf_k;
 
 			// sensor lesning
-				int8_t sensor =  0;//ADCVerdi();
-
+				int8_t sensor1 =  0;//ADCVerdi();
+				int8_t sensor =  ADCVerdi();
 
 				//printf(sensor1);
 
@@ -122,7 +122,7 @@ int main(void)  {
 
     		        send_maaling = 0; // Sendinga er nå utført.
                 }
-				int8_t sensor1 =  ADCVerdi();
+
 
     		    ny_maaling = 0; // Målinga er nå utført
 			 }
