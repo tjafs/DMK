@@ -163,14 +163,14 @@
       </source>
       <source file="..\..\..\metodar\extern_dekl_globale_variablar.h" lastModified="1581f3c0a0d">
       </source>
+      <source file="..\..\..\metodar\dekl_globale_variablar.h" lastModified="1581f3c0a0a">
+      </source>
       <source file="..\..\..\metodar\UART_metodar.c" lastModified="1581f9ea428">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_usart.h"/>
          <include file="..\..\..\metodar\extern_dekl_globale_variablar.h"/>
-      </source>
-      <source file="..\..\..\metodar\dekl_globale_variablar.h" lastModified="1581f3c0a0a">
       </source>
       <source file="..\..\..\metodar\I2C_metodar.c" lastModified="1581f3c09e1">
       </source>
@@ -196,17 +196,17 @@
          <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
          <include file="..\..\..\metodar\extern_dekl_globale_variablar.h"/>
       </source>
-      <source file="..\..\..\metodar\Instalering_av_perifermodul.h" lastModified="1581f74cbbf">
+      <source file="..\..\..\metodar\Instalering_av_perifermodul.h" lastModified="1581fd74d20">
          <include file="..\..\..\cmsis_lib\include\stm32f30x_adc.h"/>
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f30x_rcc.h"/>
       </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f30x.S" lastModified="1581f3c091e">
+      </source>
       <source file="..\..\..\metodar\initialisering.c" lastModified="1581f78effa">
          <include file="..\..\..\cmsis_boot\stm32f30x.h"/>
          <include file="..\..\..\stm32f3_discovery\stm32f3_discovery_lsm303dlhc.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\startup\startup_stm32f30x.S" lastModified="1581f3c091e">
       </source>
       <source file="..\..\..\cmsis_lib\source\stm32f30x_tim.c" lastModified="1581f3c09ae">
          <include file="..\..\..\cmsis_lib\include\stm32f30x_tim.h"/>

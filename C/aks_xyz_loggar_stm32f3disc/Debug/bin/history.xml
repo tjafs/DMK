@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wall -g -nostartfiles -Map=aks_xyz_loggar_stm32f3disc.map -O2 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\aks_xyz_loggar_stm32f3disc -TC:\CooCox\CoIDE\configuration\ProgramData\aks_xyz_loggar_stm32f3disc/arm-gcc-link.ld -g">
-      <target file="aks_xyz_loggar_stm32f3disc.elf" lastModified="1581fbbe91e">
+      <target file="aks_xyz_loggar_stm32f3disc.elf" lastModified="1581fdac871">
          <source file="..\obj\GPIO_Toggle_Example.o" lastModified="1581f3fca79"/>
          <source file="..\obj\stm32f30x_rcc.o" lastModified="1581f3fcbc1"/>
          <source file="..\obj\stm32f3_discovery_lsm303dlhc.o" lastModified="1581f3fcc7c"/>
@@ -12,7 +12,7 @@
          <source file="..\obj\UART_metodar.o" lastModified="1581f9ea6c2"/>
          <source file="..\obj\stm32f30x_it.o" lastModified="1581f3fcf98"/>
          <source file="..\obj\stm32f30x_gpio.o" lastModified="1581f3fd014"/>
-         <source file="..\obj\main.o" lastModified="1581fbbe6fe"/>
+         <source file="..\obj\main.o" lastModified="1581fdac678"/>
          <source file="..\obj\printf.o" lastModified="1581f3fd1ab"/>
          <source file="..\obj\avbrots_metodar.o" lastModified="1581f3fd206"/>
          <source file="..\obj\SPI1_metodar.o" lastModified="1581f3fd26d"/>

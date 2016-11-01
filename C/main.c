@@ -109,6 +109,9 @@ int main(void)  {
 			// sensor lesning
 				int8_t sensor =  0;//ADCVerdi();
 
+
+				//printf(sensor1);
+
 			 // Send kvar tiande måling
 				if(send_maaling) {
 
@@ -119,6 +122,7 @@ int main(void)  {
 
     		        send_maaling = 0; // Sendinga er nå utført.
                 }
+				int8_t sensor1 =  ADCVerdi();
 
     		    ny_maaling = 0; // Målinga er nå utført
 			 }
