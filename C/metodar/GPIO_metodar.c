@@ -119,28 +119,6 @@ void GPIO_oppstart(void)  {
 
 }
 
-
-void GPIO_blink(void)  {
-
-//    volatile uint32_t i;
-
-  //Snu pinne PC8 og 9
-
-    GPIOC->ODR ^= (GPIO_Pin_8 | GPIO_Pin_9);
-
-  //Pause
-  //   for(i=0;i<0x100000;i++);
-
-}
-
-void GPIO_sett_kompassmoenster(int8_t verdi)  {
-
-
-
-  //Legg verdi ut på pinnane PE8-15
-    GPIOE->ODR = verdi << 8;  //;
-}
-
 void GPIO_lys_av()  {
 
 

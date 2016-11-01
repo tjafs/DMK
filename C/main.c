@@ -144,64 +144,13 @@ int main(void)  {
 //volatile float z;
 //
 //GPIO_init();
-//    //automatically added by CoIDE
-////	GPIO_Toggle_Example();
 //
-//	//automatically added by CoIDE
-////	USART_Printf_Example();
 //    b = (a>>8);
-
 //	while(1)
-//    {
-//    GPIO_blink();
-//
-//	  p= (uint32_t *)&acc;
-//	  y = sinf(x);  //funksjonf er for enkelpresisjon dvs. "float"
-//	  z = 1 - powf(cosf(x),2);  //FPU-en er laga for float. Double vil vera mykje mindre effektivt
-//
-//	  acc = acc + y*z- 2.0f; // For å tvinga "float" som std.
-//    }
 //}
-
-
-
-//	     tilstandsmaskin(); // Styring av sykkellykttilstand
-//	     if(send_ny_tidsserie_1000) { // sending kvart 10. msek, sjå SysTick_oppstart() og
-//	    	 if(send_1maaling) { // sending kvart 10. msek, sjå SysTick_oppstart() og
-//	    	                // SysTick_Handler() i fila avbrotsmetodar.c
-//
-//	    		 USART_handtering();
-//	    		 //send_1maaling = 0; Sender nå løpande sidan ein lagar testdata i USART-rutina
 //	    	 }
 //
 //	     }
-//void tilstandsmaskin(void) {
-//
-//	if (gyldig_trykk_av_USERbrytar) {
-//
-//		gyldig_trykk_av_USERbrytar = 0;
-//        tilstand++;
-//
-//	    if (tilstand > 2) { // Skal ha 3 tilstandar, tilstand0-2
-//		   tilstand = 0;
-//	    }
-//	}
-//
-//	if (oppdater_diodar) {
-//
-//		switch(tilstand) {
-//		case 0:
-//			GPIO_lys_av();
-//			break;
-//		case 1:
-//			GPIO_blink();
-//			break;
-//		case 2:
-//			GPIO_lys_paa();
-//			break;
-//		}
-//	    oppdater_diodar = 0;
-//	}
 //}
 //---------------------------------------------------------------------------------
 // Fraa oerland
@@ -277,11 +226,6 @@ int main(void)  {
 //	      vent_400nsek();
 //        }
 //
-//		if(oppdater_diodar) {
-//			GPIO_sett_kompassmoenster(diode_moenster);
-//			//diode_moenster = diode_moenster + 0x100;
-//			oppdater_diodar = 0;
-//		}
 //
 //
 //        // Les accelerometer
@@ -294,34 +238,6 @@ int main(void)  {
 //		int16_t y = (buffer[4] << 8) | buffer[5];
 //		int16_t z = (buffer[2] << 8) | buffer[3];
 //
-//
-//        // Skriv LCD
-//		if(lcd_wait++ > 50){
-//			lcd_wait = 0;
-//
-//			LCD_kommando(0x01);
-//
-//			i = 40;
-//			while(i-- > 0){
-//				vent_100usek();
-//			}
-//
-//			// Skriv data til LCD
-//			LCD_pos(0, 0);
-//			char xs[10];
-//			sprintf(xs, "%i", x);
-//			LCD_tekst(xs);
-//
-//			LCD_pos(1, 0);
-//			char ys[10];
-//			sprintf(ys, "%i", y);
-//			LCD_tekst(ys);
-//
-//			LCD_pos(2, 0);
-//			char zs[10];
-//			sprintf(zs, "%i", z);
-//			LCD_tekst(zs);
-//		}
 //
 //		char log[30];
 //		sprintf(log, "%i\n", z);
