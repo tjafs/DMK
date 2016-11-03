@@ -24,6 +24,8 @@ graf2 = 0
 stop1 = 0
 start = 0
 antall_filer = 0
+
+
 # opptatering av graf 1-------------------------------
 def animate(i):
     if kor == 1:
@@ -31,7 +33,9 @@ def animate(i):
         a.clear()
         a.plot(x, y)
 
+
 # ------------------------------------------------------------------
+
 # opptatering av graf 2-------------------------------
 def animate2(i):
     global start
@@ -40,6 +44,16 @@ def animate2(i):
         (x, y) = metoder.henting_av_tidligere_data(graf2)
         a2.clear()
         a2.plot(x, y)
+
+# ------------------------------------------------------------------
+
+def opptatering():
+    while(1):
+        time.sleep(1)
+        (x, y) = metoder.henting_av_kontinuerlig_data(3)
+        global avstand
+        avstand.set(x)
+
 
 # ------------------------------------------------------------------
 
@@ -53,7 +67,12 @@ def start_knapp():
 
         yo = threading.Thread(target=Logging.start_lesing)
         yo.start()
+
         time.sleep(0.5)
+        # opptatering av lable (avstand)
+        text_update = threading.Thread(target=opptatering)
+        text_update.start()
+
         kor = 1
         stop1 = 0
     print('funk')
@@ -101,7 +120,7 @@ def avslutt():
         os.remove(fil)
 
     i = 1
-    while i <= 2:
+    while i <= 3:
         l1 = ['Kontinuerlig_', str(i), '.pkl']
         fil = ''.join(l1)
         os.path.isfile(fil)
@@ -145,25 +164,28 @@ bilde = tkinter.PhotoImage(file='b.gif')
 ttk.Label(frame2, image=bilde).grid(column=2, row=1)
 
 #-----------------------------------------------------------------------
-
-frame3 = ttk.Frame(root, padding="3 3 20 20")
-frame3.grid(column=0, row=1)
+frame3 = ttk.Frame(root, padding="6 6 20 20")
+frame3.grid(column=1, row=1)
 frame3.columnconfigure(0, weight=1)
 frame3.rowconfigure(0, weight=1)
 
+ttk.Label(frame3,text='Tidligere plott').grid(column=2, row=1)
 
+Figure = FigureCanvasTkAgg(f2,frame3)
+Figure.show()
+Figure.get_tk_widget().grid(column=2, row=2)
 
 #-----------------------------------------------------------------------
-frame4 = ttk.Frame(root, padding="6 6 20 20")
-frame4.grid(column=1, row=1)
+frame4 = ttk.Frame(root, padding="3 3 20 20")
+frame4.grid(column=1, row=2)
 frame4.columnconfigure(0, weight=1)
 frame4.rowconfigure(0, weight=1)
 
-ttk.Label(frame4,text='Tidligere plott').grid(column=2, row=1)
+avstand = tkinter.StringVar()
 
-Figure = FigureCanvasTkAgg(f2,frame4)
-Figure.show()
-Figure.get_tk_widget().grid(column=2, row=2)
+ttk.Label(frame4,text='Avstanden er: ').grid(column=0, row=0)
+ttk.Label(frame4,textvariable=avstand).grid(column=0, row=1)
+
 
 #-----------------------------------------------------------------------
 for child in frame.winfo_children(): child.grid_configure(padx=5, pady=5)
@@ -172,4 +194,11 @@ for child in frame2.winfo_children(): child.grid_configure(padx=2, pady=2)
 
 ani = animation.FuncAnimation(f, animate, interval=1000)
 ani2 = animation.FuncAnimation(f2, animate2, interval=1000)
+
+
+
 root.mainloop()
+
+
+
+

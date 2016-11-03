@@ -6,16 +6,17 @@ import serial
 import matplotlib.pyplot as graf
 import pickle
 import metoder
-print('okuyvbluknk')
+
 class P:
 
-    def __init__(self,x,skyv,tidsomloepnr,x_data,tid_data,runde):
+    def __init__(self,x,skyv,tidsomloepnr,x_data,tid_data,runde,avstand):
         self.__x = x
         self.__skyv = skyv
         self.__tidsomloepnr = tidsomloepnr
         self.__x_data = x_data
         self.__tid_data = tid_data
         self.__runde = runde
+        self.__avstand = avstand
 
     def getX(self):
         return self.__x
@@ -54,6 +55,12 @@ class P:
     def setrunde(self, runde):
         self.__runde = runde
 
+    def get_avstand(self):
+        return self.__avstand
+
+    def set_avstand(self, avstand):
+        self.__avstand = avstand
+
 def hexascii2int(hex_teikn):
     if '0' <= hex_teikn <= '9':
         return (int(ord(hex_teikn) - 48))  # ASCII-koden for '0' er 0x30 = 48
@@ -67,8 +74,9 @@ def start_lesing():
     def lesing(port, hvilken_komando):
         tid = []
         x_data = []
-        p1 = P(0, 0, 0, 0, 0, 0)
+        p1 = P(0, 0, 0, 0, 0, 0, 0)
         l = 1
+        nyavstand = 0
 
         metoder.lagring_av_kontinuerlig_data(1,0,0)
 
@@ -85,16 +93,17 @@ def start_lesing():
 
                 if teikn == 'Y':
                     a = 1
-                if teikn == 'S':
-                    kl = 1
+                #if teikn == 'S':
+                #    kl = 1
 
-                if kl <= 3:
-                    print(teikn)
-                    kl += 1
+                #if kl <= 3:
+                #    print(teikn)
+                #    kl += 1
 
                 #print(teikn)
-                #print('her')
+                #print('her ',p1.getrunde())
 
+            # dekoding
             p1 = (sortering(data, p1))
 
             tid.append(p1.gettid_data())
@@ -102,6 +111,8 @@ def start_lesing():
 
             metoder.lagring_av_kontinuerlig_data(1,tid,x_data)
 
+            nyavstand = (p1.get_avstand())
+            metoder.lagring_av_kontinuerlig_data(3,nyavstand,p1.getrunde())
 
             (stop,stop2) = metoder.henting_av_kontinuerlig_data(2)
 
@@ -119,8 +130,10 @@ def start_lesing():
         k = 0
         ut_data_x = []
         ut_data_tid = []
+        ut_data_avstand = []
         x_data = []
         tid = []
+        avstand = []
 
         # Sortering av tid og x data
         while i < len(inn_data):
@@ -130,8 +143,10 @@ def start_lesing():
                         inn_data[i + 3]) + hexascii2int(inn_data[i + 4]))
             if inn_data[i] == 'T':
                 ut_data_tid.append(16 * hexascii2int(inn_data[i + 1]) + hexascii2int(inn_data[i + 2]))
-            i += 1
+            if inn_data[i] == 'S':
+                ut_data_avstand.append(16 * hexascii2int(inn_data[i + 1]) + hexascii2int(inn_data[i + 2]))
 
+            i += 1
 
             # Behandling av x data
         if len(ut_data_x) == 0:
@@ -165,8 +180,22 @@ def start_lesing():
             for k in range(0, len(tid)):
                 tid[k] = Ts * (tid[k] - p1.getSkyv())
 
+            # Behandling av avstand
+        if len(ut_data_avstand) == 0:
+            print('ingen data')
+        else:
+            k = 0
+            for k in range(0, len(ut_data_avstand)):
+                avstand.append(ut_data_avstand[k] + p1.gettidsomloepnr() * 256)
+                if ut_data_avstand[k] == 255:
+                    p1.settidsomloepnr(p1.gettidsomloepnr() + 1)
+                k += 1
+        print(avstand)
 
-                # lagrer tid og x data i p1
+
+
+        # lagrer tid og x data i p1
+        p1.set_avstand(avstand)
         p1.settid_data(tid)
         p1.setx_data(x_data)
         p1.setrunde(p1.getrunde() + 1)
@@ -181,7 +210,7 @@ def start_lesing():
     kommando = '0'
     brukarkommandoar = queue.Queue()
     connected = True
-    port = 'COM3'
+    port = 'COM4'
     baud = 115200  # 9600
 
     serieport = serial.Serial(port, baud, timeout=1)
