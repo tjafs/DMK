@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Project version="2G - 1.7.6" name="aks_xyz_loggar_stm32f3disc">
+  <Target name="aks_xyz_loggar_stm32f3disc" isCurrent="1">
+    <Device manufacturerId="9" manufacturerName="ST" chipId="520" chipName="STM32F303VC" boardId="" boardName=""/>
+    <BuildOption>
+      <Compile>
+        <Option name="OptimizationLevel" value="2"/>
+        <Option name="UseFPU" value="0"/>
+        <Option name="UserEditCompiler" value=""/>
+        <Option name="SupportCPlusplus" value="0"/>
+        <Option name="FPU" value="2"/>
+        <Includepaths>
+          <Includepath path="."/>
+        </Includepaths>
+        <DefinedSymbols>
+          <Define name="STM32F303VC"/>
+          <Define name="STM32F30X"/>
+          <Define name="__FPU_USED"/>
+        </DefinedSymbols>
+      </Compile>
+      <Link useDefault="0">
+        <Option name="DiscardUnusedSection" value="0"/>
+        <Option name="UserEditLinkder" value=""/>
+        <Option name="UseMemoryLayout" value="1"/>
+        <Option name="nostartfiles" value="1"/>
+        <Option name="LTO" value="0"/>
+        <Option name="IsNewStartupCode" value="1"/>
+        <Option name="Library" value="Not use C Library"/>
+        <LinkedLibraries/>
+        <MemoryAreas debugInFlashNotRAM="1">
+          <Memory name="IROM1" type="ReadOnly" size="0x00040000" startValue="0x08000000"/>
+          <Memory name="IRAM1" type="ReadWrite" size="0x0000A000" startValue="0x20000000"/>
+          <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
+          <Memory name="IRAM2" type="ReadWrite" size="0x00002000" startValue="0x10000000"/>
+        </MemoryAreas>
+        <LocateLinkFile path="c:/coocox/coide/configuration/programdata/aks_xyz_loggar_stm32f3disc/arm-gcc-link.ld" type="0"/>
+      </Link>
+      <Output>
+        <Option name="OutputFileType" value="0"/>
+        <Option name="Path" value="./"/>
+        <Option name="Name" value="aks_xyz_loggar_stm32f3disc"/>
+        <Option name="HEX" value="1"/>
+        <Option name="BIN" value="1"/>
+      </Output>
+      <User>
+        <UserRun name="Run#1" type="Before" checked="0" value=""/>
+        <UserRun name="Run#1" type="After" checked="0" value=""/>
+      </User>
+    </BuildOption>
+    <DebugOption>
+      <Option name="org.coocox.codebugger.gdbjtag.core.adapter" value="ST-Link"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.debugMode" value="SWD"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.clockDiv" value="1M"/>
+      <Option name="org.coocox.codebugger.gdbjtag.corerunToMain" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkgdbserver" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.userDefineGDBScript" value=""/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.targetEndianess" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.jlinkResetMode" value="Type 0: Normal"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.resetMode" value="SYSRESETREQ"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifSemihost" value="0"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ifCacheRom" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.ipAddress" value="127.0.0.1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Effected"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="STM32F3xx_256.elf"/>
+    </DebugOption>
+    <ExcludeFile/>
+  </Target>
+  <Components path="./">
+    <Component id="30" name="C Library" path="" type="2"/>
+    <Component id="31" name="Retarget printf" path="" type="2"/>
+    <Component id="54" name="M4 CMSIS Core" path="" type="2"/>
+    <Component id="1205" name="cmsis_boot" path="" type="2"/>
+    <Component id="1206" name="RCC" path="" type="2"/>
+    <Component id="1207" name="GPIO" path="" type="2"/>
+    <Component id="1208" name="ADC" path="" type="2"/>
+    <Component id="1209" name="CAN" path="" type="2"/>
+    <Component id="1214" name="EXTI" path="" type="2"/>
+    <Component id="1216" name="I2C" path="" type="2"/>
+    <Component id="1222" name="SPI" path="" type="2"/>
+    <Component id="1224" name="TIM" path="" type="2"/>
+    <Component id="1225" name="USART" path="" type="2"/>
+    <Component id="1226" name="MISC" path="" type="2"/>
+  </Components>
+  <Files>
+    <File name="metodar/Instalering_av_perifermodul.h" path="../../DMK2/C/metodar/Instalering_av_perifermodul.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f30x_gpio.h" path="cmsis_lib/include/stm32f30x_gpio.h" type="1"/>
+    <File name="metodar/SPI2_metodar.c" path="metodar/SPI2_metodar.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f30x_exti.h" path="cmsis_lib/include/stm32f30x_exti.h" type="1"/>
+    <File name="cmsis_boot" path="" type="2"/>
+    <File name="example/system_stm32f30x.c" path="example/system_stm32f30x.c" type="1"/>
+    <File name="metodar/UART_metodar.c" path="metodar/UART_metodar.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f30x_exti.c" path="cmsis_lib/source/stm32f30x_exti.c" type="1"/>
+    <File name="metodar/I2C_metodar.c" path="metodar/I2C_metodar.c" type="1"/>
+    <File name="metodar/TIM_metodar.c" path="metodar/TIM_metodar.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f30x_can.h" path="cmsis_lib/include/stm32f30x_can.h" type="1"/>
+    <File name="cmsis_boot/startup/startup_stm32f30x.S" path="cmsis_boot/startup/startup_stm32f30x.S" type="1"/>
+    <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
+    <File name="cmsis_boot/startup" path="" type="2"/>
+    <File name="cmsis_lib/source/stm32f30x_misc.c" path="cmsis_lib/source/stm32f30x_misc.c" type="1"/>
+    <File name="stm32f3_discovery" path="" type="2"/>
+    <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
+    <File name="cmsis/core_cm4.h" path="cmsis/core_cm4.h" type="1"/>
+    <File name="example/GPIO_Toggle_Example.c" path="example/GPIO_Toggle_Example.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f30x_rcc.h" path="cmsis_lib/include/stm32f30x_rcc.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f30x_tim.h" path="cmsis_lib/include/stm32f30x_tim.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f30x_adc.h" path="cmsis_lib/include/stm32f30x_adc.h" type="1"/>
+    <File name="syscalls/syscalls.c" path="syscalls/syscalls.c" type="1"/>
+    <File name="example" path="" type="2"/>
+    <File name="cmsis_lib/source" path="" type="2"/>
+    <File name="cmsis_lib/include/stm32f30x_i2c.h" path="cmsis_lib/include/stm32f30x_i2c.h" type="1"/>
+    <File name="stm32f3_discovery/stm32f3_discovery_lsm303dlhc.h" path="stm32f3_discovery/stm32f3_discovery_lsm303dlhc.h" type="1"/>
+    <File name="metodar/extern_dekl_globale_variablar.h" path="metodar/extern_dekl_globale_variablar.h" type="1"/>
+    <File name="stm32f3_discovery/stm32f3_discovery_l3gd20.c" path="stm32f3_discovery/stm32f3_discovery_l3gd20.c" type="1"/>
+    <File name="cmsis_boot/system_stm32f30x.h" path="cmsis_boot/system_stm32f30x.h" type="1"/>
+    <File name="stdio/printf.c" path="stdio/printf.c" type="1"/>
+    <File name="stm32f3_discovery/stm32f3_discovery.c" path="stm32f3_discovery/stm32f3_discovery.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f30x_adc.c" path="cmsis_lib/source/stm32f30x_adc.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f30x_misc.h" path="cmsis_lib/include/stm32f30x_misc.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f30x_usart.h" path="cmsis_lib/include/stm32f30x_usart.h" type="1"/>
+    <File name="metodar/initialisering.c" path="metodar/initialisering.c" type="1"/>
+    <File name="metodar" path="" type="2"/>
+    <File name="stdio" path="" type="2"/>
+    <File name="stm32f3_discovery/stm32f3_discovery_lsm303dlhc.c" path="stm32f3_discovery/stm32f3_discovery_lsm303dlhc.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f30x_spi.c" path="cmsis_lib/source/stm32f30x_spi.c" type="1"/>
+    <File name="metodar/SPI1_metodar.c" path="metodar/SPI1_metodar.c" type="1"/>
+    <File name="cmsis_boot/stm32f30x.h" path="cmsis_boot/stm32f30x.h" type="1"/>
+    <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f30x_syscfg.c" path="cmsis_lib/source/stm32f30x_syscfg.c" type="1"/>
+    <File name="metodar/LSM303DLHC_metodar.c" path="metodar/LSM303DLHC_metodar.c" type="1"/>
+    <File name="metodar/avbrots_metodar.c" path="metodar/avbrots_metodar.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f30x_i2c.c" path="cmsis_lib/source/stm32f30x_i2c.c" type="1"/>
+    <File name="example/stm32f30x_it.h" path="example/stm32f30x_it.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f30x_syscfg.h" path="cmsis_lib/include/stm32f30x_syscfg.h" type="1"/>
+    <File name="metodar/LINMOT_metodar.c" path="metodar/LINMOT_metodar.c" type="1"/>
+    <File name="stm32f3_discovery/stm32f3_discovery.h" path="stm32f3_discovery/stm32f3_discovery.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f30x_tim.c" path="cmsis_lib/source/stm32f30x_tim.c" type="1"/>
+    <File name="cmsis_lib/include/stm32f30x_spi.h" path="cmsis_lib/include/stm32f30x_spi.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f30x_gpio.c" path="cmsis_lib/source/stm32f30x_gpio.c" type="1"/>
+    <File name="cmsis" path="" type="2"/>
+    <File name="cmsis_lib" path="" type="2"/>
+    <File name="example/stm32f30x_it.c" path="example/stm32f30x_it.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f30x_can.c" path="cmsis_lib/source/stm32f30x_can.c" type="1"/>
+    <File name="syscalls" path="" type="2"/>
+    <File name="stm32f3_discovery/stm32f3_discovery_l3gd20.h" path="stm32f3_discovery/stm32f3_discovery_l3gd20.h" type="1"/>
+    <File name="cmsis_boot/system_stm32f30x_temp.c" path="cmsis_boot/system_stm32f30x_temp.c" type="1"/>
+    <File name="cmsis_lib/include" path="" type="2"/>
+    <File name="metodar/dekl_globale_variablar.h" path="metodar/dekl_globale_variablar.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f30x_usart.c" path="cmsis_lib/source/stm32f30x_usart.c" type="1"/>
+    <File name="metodar/GPIO_metodar.c" path="metodar/GPIO_metodar.c" type="1"/>
+    <File name="main.c" path="main.c" type="1"/>
+    <File name="cmsis_lib/source/stm32f30x_rcc.c" path="cmsis_lib/source/stm32f30x_rcc.c" type="1"/>
+  </Files>
+</Project>
