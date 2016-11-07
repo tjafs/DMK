@@ -19,7 +19,7 @@ import serial
 import matplotlib.pyplot as mpl
 
 # --------------------------------------------------------------------------
-# Metode for aa gi ut int-verdien til eit hexadesimalt teikn i ASCII-format
+# Metode for aa gi ut int-verdien til eit hexadesimalt teikn i ASCII-formatwwww
 # --------------------------------------------------------------------------
 def hexascii2int(hex_teikn):
     if '0' <= hex_teikn <= '9':
